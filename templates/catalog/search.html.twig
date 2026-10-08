@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{# term vem da query string: só é exibido com o escape automático do Twig (nunca |raw) #}
+{% block title %}{{ term ? 'Busca: ' ~ term : 'Busca' }}{% endblock %}
+{% block meta_description %}Resultados da busca por livros no catálogo Spassu Livros.{% endblock %}
+{% block header_search %}{% endblock %}
+
+{% block breadcrumb %}
+    <twig:Ui:Breadcrumb :items="[{label: 'Início', href: path('app_home')}, {label: 'Busca'}]" />
+{% endblock %}
+
+{% block body %}
+    {% set quoted = '"' ~ term ~ '"' %}
+    <twig:Layout:PageHeader title="Buscar livros"
+        :subtitle="page ? (page.total ~ (page.total == 1 ? ' resultado' : ' resultados') ~ ' para ' ~ quoted) : null">
+        <twig:Form:SearchBar id="busca-pagina" :value="term" class="app-page-header__search" />
+    </twig:Layout:PageHeader>
+
+    {% if page is null %}
+        <twig:Ui:EmptyState icon="search" title="O que você procura?" message="Digite um título ou nome de autor para buscar." />
+    {% elseif page.items is empty %}
+        <twig:Ui:EmptyState icon="search" :title="'Nenhum livro encontrado para ' ~ quoted" message="Confira a grafia ou tente outro termo.">
+            <twig:Ui:Button :href="path('app_home')" variant="outline-primary" icon="arrow-left">Voltar ao início</twig:Ui:Button>
+        </twig:Ui:EmptyState>
+    {% else %}
+        <twig:Book:Grid :books="page.items" headingLevel="2" :eagerCount="page.page == 1 ? 2 : 0" />
+        <twig:Ui:Pagination :page="page.page" :pages="page.pages" route="app_search" :params="{q: term}" />
+    {% endif %}
+{% endblock %}

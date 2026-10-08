@@ -1,0 +1,34 @@
+{#
+    Listagem comum do admin. Espera: page, heading, new_route, new_label, entity_label (plural).
+    Blocos: filters (filtros acima da tabela), table_head e table_rows (linhas), empty_title.
+#}
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ heading }}{% endblock %}
+
+{% block breadcrumb %}
+    <twig:Ui:Breadcrumb :items="[{label: 'Início', href: path('app_home')}, {label: heading}]" />
+{% endblock %}
+
+{% block body %}
+    <twig:Layout:PageHeader :title="heading" :subtitle="page.total ~ (page.total == 1 ? ' registro' : ' registros')">
+        <twig:block name="actions">
+            <twig:Ui:Button :href="path(new_route)" icon="plus" class="btn-sm">{{ new_label }}</twig:Ui:Button>
+        </twig:block>
+    </twig:Layout:PageHeader>
+
+    {% block filters %}{% endblock %}
+
+    {% if page.items is empty %}
+        <twig:Ui:EmptyState :title="block('empty_title')" />
+    {% else %}
+        <div class="table-responsive app-table-wrapper">
+            <table class="table table-hover align-middle app-table">
+                <caption class="visually-hidden">{{ heading }}: página {{ page.page }} de {{ page.pages }}</caption>
+                <thead>{% block table_head %}{% endblock %}</thead>
+                <tbody>{% block table_rows %}{% endblock %}</tbody>
+            </table>
+        </div>
+        <twig:Ui:Pagination :page="page.page" :pages="page.pages" :route="app.request.attributes.get('_route')" :params="pagination_params" />
+    {% endif %}
+{% endblock %}

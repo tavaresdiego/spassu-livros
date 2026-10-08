@@ -1,0 +1,8 @@
+{# Estado vazio: ícone, título, mensagem e slot para ações. headingLevel: nível do título (padrão 2). #}
+{% props title = 'Nada por aqui', message = null, icon = 'book', headingLevel = 2 %}
+<div {{ attributes.defaults({class: 'app-empty-state'}) }}>
+    <twig:Ui:Icon :name="icon" size="3rem" class="app-empty-state__icon" />
+    <h{{ headingLevel }} class="app-empty-state__title">{{ title }}</h{{ headingLevel }}>
+    {% if message %}<p class="app-empty-state__message">{{ message }}</p>{% endif %}
+    {% block content %}{% endblock %}
+</div>

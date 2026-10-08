@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório de livros por autor</title>
+    <style>
+        @page { margin: 90px 40px 50px 40px; }
+        body { font-family: "Poppins", sans-serif; font-size: 9pt; color: #0b0c0c; }
+        .header { position: fixed; top: -70px; left: 0; right: 0; height: 50px; border-bottom: 2px solid #0b0c0c; }
+        .header__logo { float: left; width: 108px; height: 40px; margin-right: 340px; }
+        .header h1 { margin: 0; font-size: 14pt; color: #0b0c0c; text-align: right; }
+        .header p { margin: 4px 0 0; font-size: 8pt; color: #9ca2a4; text-align: right; }
+        h2 { font-size: 11pt; color: #0b0c0c; margin: 16px 0 4px; }
+        table { width: 100%; border-collapse: collapse; page-break-inside: auto; }
+        tr { page-break-inside: avoid; }
+        th, td { padding: 4px 5px; border-bottom: 1px solid #e3e7e8; text-align: left; vertical-align: top; }
+        thead th { background: #fafafa; font-size: 8pt; text-transform: uppercase; }
+        tfoot th, tfoot td { background: white; font-weight: bold; border-top: 1px solid #e3e7e8; }
+        .num { text-align: right; white-space: nowrap; }
+        .empty { color: #9ca2a4; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="header__logo" src="{{ logo }}" width="108" height="40" alt="Spassu Livros">
+        <h1>Relatório de livros por autor</h1>
+        <p>Gerado em {{ geradoEm|format_datetime('short', 'short', locale: 'pt_BR') }} · {{ autores|length }} {{ autores|length == 1 ? 'autor' : 'autores' }}</p>
+    </div>
+
+    {% for autor in autores %}
+        <h2>{{ autor.nome }}</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Título</th><th>Editora</th><th class="num">Edição</th><th>Ano</th><th>Assuntos</th><th class="num">Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for livro in autor.livros %}
+                    <tr>
+                        <td>{{ livro.Titulo }}</td>
+                        <td>{{ livro.Editora }}</td>
+                        <td class="num">{{ livro.Edicao }}ª</td>
+                        <td>{{ livro.AnoPublicacao }}</td>
+                        <td>{{ livro.Assuntos ?? '—' }}</td>
+                        <td class="num">{{ livro.Valor|format_currency('BRL', locale: 'pt_BR') }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5">Subtotal: {{ autor.total }} {{ autor.total == 1 ? 'livro' : 'livros' }}</th>
+                    <td class="num">{{ autor.valorTotal|format_currency('BRL', locale: 'pt_BR') }}</td>
+                </tr>
+            </tfoot>
+        </table>
+    {% else %}
+        <p class="empty">Nenhum livro com autor cadastrado.</p>
+    {% endfor %}
+</body>
+</html>

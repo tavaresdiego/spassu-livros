@@ -1,0 +1,9 @@
+{# Autores separados por vírgula. linked: cada nome vira link para /busca?q=nome · size: md|lg #}
+{% props autores = [], linked = false, size = 'md' %}
+{% if autores is not empty %}
+    <p {{ attributes.defaults({class: 'mb-2 app-authors' ~ (size == 'lg' ? ' app-authors--lg')}) }}>
+        {%- for autor in autores -%}
+            {%- if linked %}<a href="{{ path('app_search', {q: autor.nome}) }}">{{ autor.nome }}</a>{% else %}{{ autor.nome }}{% endif %}{% if not loop.last %}, {% endif -%}
+        {%- endfor -%}
+    </p>
+{% endif %}

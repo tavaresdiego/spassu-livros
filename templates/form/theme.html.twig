@@ -1,0 +1,45 @@
+{% extends 'bootstrap_5_layout.html.twig' %}
+
+{#
+    Tema de formulário do projeto. O form_row do Symfony já liga help e erros ao campo
+    (aria-describedby="<id>_help <id>_error1" + aria-invalid); os blocos abaixo mantêm isso.
+#}
+
+{# Valor em R$: input-group com prefixo; a máscara é aplicada por public/js/app.js ([data-money-mask]) #}
+{%- block brl_money_widget -%}
+    <div class="input-group{{ not valid ? ' has-validation' }}">
+        <span class="input-group-text" aria-hidden="true">R$</span>
+        {{- block('form_widget_simple') -}}
+        {{- form_errors(form) -}}
+    </div>
+{%- endblock brl_money_widget -%}
+
+{%- block brl_money_row -%}
+    {%- set aria_describedby = (help ? [id ~ '_help'] : [])|merge(errors|map((_, index) => id ~ '_error' ~ (index + 1))) -%}
+    {%- set widget_attr = {attr: (aria_describedby is not empty ? {'aria-describedby': aria_describedby|join(' ')} : {})
+        |merge(errors|length > 0 ? {'aria-invalid': 'true'} : {})} -%}
+    <div class="app-field">
+        {{- form_label(form) -}}
+        {{- form_widget(form, widget_attr) -}}
+        {{- form_help(form) -}}
+    </div>
+{%- endblock brl_money_row -%}
+
+{# Linha padrão com classe própria, para estilizar campos sem mexer no Bootstrap #}
+{%- block form_row -%}
+    {%- set row_attr = row_attr|merge({class: (row_attr.class|default('') ~ ' app-field')|trim}) -%}
+    {{- parent() -}}
+{%- endblock form_row -%}
+
+{# Erros do formulário (raiz) como Ui:Alert; erros de campo seguem inline, ligados por aria-describedby #}
+{%- block form_errors -%}
+    {%- if form is rootform -%}
+        {%- if errors|length > 0 -%}
+            <twig:Ui:Alert type="danger" :id="id ~ '_errors'">
+                {%- for error in errors %}<p class="mb-0">{{ error.message }}</p>{% endfor -%}
+            </twig:Ui:Alert>
+        {%- endif -%}
+    {%- else -%}
+        {{- parent() -}}
+    {%- endif -%}
+{%- endblock form_errors -%}

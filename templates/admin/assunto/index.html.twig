@@ -1,0 +1,28 @@
+{% extends 'admin/_index_page.html.twig' %}
+{% set heading = 'Assuntos' %}
+{% set new_route = 'admin_assunto_new' %}
+{% set new_label = 'Novo assunto' %}
+{% set pagination_params = filter ? {q: filter} : {} %}
+
+{% block empty_title %}{{ filter ? 'Nenhum assunto encontrado' : 'Nenhum assunto cadastrado' }}{% endblock %}
+
+{% block filters %}
+    <twig:Form:FilterBar route="admin_assunto_index" :value="filter" placeholder="Filtrar por descrição ou código" label="Filtrar assuntos" class="mb-3" />
+{% endblock %}
+
+{% block table_head %}
+    <tr><th scope="col">Código</th><th scope="col">Descrição</th><th scope="col">Ações</th></tr>
+{% endblock %}
+
+{% block table_rows %}
+    {% for assunto in page.items %}
+        <tr>
+            <td class="app-table__code">{{ assunto.codAs }}</td>
+            <th scope="row">{{ assunto.descricao }}</th>
+            <td class="app-table__actions">
+                <twig:Ui:RowActions :editHref="path('admin_assunto_edit', {id: assunto.codAs})" :deleteAction="path('admin_assunto_delete', {id: assunto.codAs})"
+                    :tokenId="'delete-assunto-' ~ assunto.codAs" :itemLabel="assunto.descricao" />
+            </td>
+        </tr>
+    {% endfor %}
+{% endblock %}

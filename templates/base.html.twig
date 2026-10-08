@@ -1,0 +1,107 @@
+{% set route = app.request ? app.request.attributes.get('_route') %}
+{% set routeId = app.request ? app.request.attributes.get('id') %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% block meta_description %}Spassu Livros: catálogo de livros por assunto e autor, com busca, detalhes e relatório.{% endblock %}">
+    <title>{% block title %}Livraria{% endblock %} · Spassu Livros</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23f94615'/%3E%3Cpath d='M9 7h12a2 2 0 0 1 2 2v16H11a2 2 0 0 1-2-2Z' fill='%23fffdf9'/%3E%3Cpath d='M11 21h12' stroke='%23f94615' stroke-width='2'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    {# CSS de plugins por página antes do custom.css, para os ajustes app- prevalecerem #}
+    {% block stylesheets %}{% endblock %}
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    {# Sem defer de propósito: registra o fallback de imagens antes de elas carregarem #}
+    <script src="{{ asset('js/app.js') }}"></script>
+</head>
+<body class="app-body">
+    <a class="visually-hidden-focusable app-skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="app-header">
+        <nav class="navbar navbar-expand-lg app-navbar" aria-label="Principal">
+            <div class="container">
+                <a class="navbar-brand app-brand" href="{{ path('app_home') }}" aria-label="Spassu Livros, página inicial"{% if route == 'app_home' %} aria-current="page"{% endif %}>
+                    <twig:Ui:Logo class="app-brand__logo" />
+                </a>
+                <twig:Ui:Button variant="outline-secondary" icon="menu" iconOnly label="Abrir menu" class="navbar-toggler app-navbar__toggler"
+                    data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false">Menu</twig:Ui:Button>
+
+                <div class="flex-grow-0 navbar-collapse collapse" id="menu-principal">
+                    <ul class="navbar-nav app-navbar__menu me-auto">
+                        {% block nav_subjects %}
+                            <li class="nav-item dropdown">
+                                <twig:Layout:NavLink :active="route == 'app_subject'" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Assuntos</twig:Layout:NavLink>
+                                <ul class="dropdown-menu">
+                                    {% for assunto in nav_assuntos() %}
+                                        <li><twig:Layout:NavLink variant="dropdown" :href="path('app_subject', {slug: assunto.descricao|slug, id: assunto.codAs})" :active="route == 'app_subject' and routeId == assunto.codAs">{{ assunto.descricao }}</twig:Layout:NavLink></li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                        {% endblock %}
+                        <li class="nav-item dropdown">
+                            <twig:Layout:NavLink :active="route starts with 'app_report'" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Relatório</twig:Layout:NavLink>
+                            <ul class="dropdown-menu">
+                                <li><twig:Layout:NavLink variant="dropdown" icon="book" :href="path('app_report')" :active="route == 'app_report'">Ver relatório</twig:Layout:NavLink></li>
+                                <li><twig:Layout:NavLink variant="dropdown" icon="download" :href="path('app_report_pdf')" target="_blank" rel="noopener">Ver PDF</twig:Layout:NavLink></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <twig:Layout:NavLink :active="route starts with 'admin_'" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Links</twig:Layout:NavLink>
+                            <ul class="dropdown-menu">
+                                <li><twig:Layout:NavLink variant="dropdown" icon="book" :href="path('admin_livro_index')" :active="route starts with 'admin_livro'">Livros</twig:Layout:NavLink></li>
+                                <li><twig:Layout:NavLink variant="dropdown" icon="user" :href="path('admin_autor_index')" :active="route starts with 'admin_autor'">Autores</twig:Layout:NavLink></li>
+                                <li><twig:Layout:NavLink variant="dropdown" icon="tag" :href="path('admin_assunto_index')" :active="route starts with 'admin_assunto'">Assuntos</twig:Layout:NavLink></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex flex-wrap align-items-center gap-2 app-navbar__tools">
+                        {% block header_search %}
+                            <twig:Form:SearchBar id="busca-topo" size="sm" class="app-navbar__search" :value="app.request ? app.request.query.get('q', '') : ''" />
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="conteudo" class="app-main container" tabindex="-1">
+        {% block breadcrumb %}{% endblock %}
+        {% for type, messages in app.flashes %}
+            {% for message in messages %}
+                <twig:Ui:Alert :type="type" dismissible>{{ message }}</twig:Ui:Alert>
+            {% endfor %}
+        {% endfor %}
+        {% block body %}{% endblock %}
+    </main>
+
+    <footer class="app-footer">
+        <div class="container app-footer__inner">
+            <p class="mb-0">Spassu Livros · {{ 'now'|date('Y') }} · Catálogo de livros, autores e assuntos.</p>
+            <nav aria-label="Rodapé">
+                <ul class="app-footer__links">
+                    <li>
+                        <a
+                            href="{{ path('app_home') }}"
+                            class="link-light link-opacity-50 link-underline-opacity-0 link-underline-opacity-100-hover link-opacity-100-hover">Início
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="{{ path('app_report') }}"
+                            class="link-light link-opacity-50 link-underline-opacity-0 link-underline-opacity-100-hover link-opacity-100-hover">
+                            Relatório
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer></script>
+    {% block javascripts %}{% endblock %}
+</body>
+</html>

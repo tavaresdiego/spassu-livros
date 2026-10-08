@@ -1,0 +1,15 @@
+{# Lista de assuntos como Ui:Badge. linked: badge vira link para /assunto/{slug}-{id} · variant: variante do badge #}
+{% props assuntos = [], linked = true, variant = 'accent', label = 'Assuntos' %}
+{% if assuntos is not empty %}
+    <ul {{ attributes.defaults({class: 'mb-2 app-subjects', 'aria-label': label}) }}>
+        {% for assunto in assuntos %}
+            <li>
+                <twig:Ui:Badge
+                    variant="outline"
+                    :href="linked ? path('app_subject', {slug: assunto.descricao|slug, id: assunto.codAs}) : null">
+                    {{ assunto.descricao }}
+                </twig:Ui:Badge>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}

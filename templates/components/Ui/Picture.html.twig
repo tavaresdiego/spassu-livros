@@ -1,0 +1,25 @@
+{#
+    Imagem responsiva: <source media="(min-width: 768px)"> com a URL desktop e <img> com a mobile.
+    ratio: 2/3 | 3/4 | 1/1 | 4/3 | 16/9 (aspect-ratio no CSS + width/height no <img>, sem salto de layout).
+    eager: true na primeira imagem visível (loading="eager" + fetchpriority="high"); senão lazy.
+    alt: sempre preenchido (padrão "Imagem"). Sem URL, ou se a imagem falhar (public/js/app.js), aparece o placeholder.
+#}
+{% props mobile = null, desktop = null, alt = 'Imagem', ratio = '2/3', eager = false, lazy = true %}
+{% set sizes = {'2/3': [400, 600], '3/4': [480, 640], '1/1': [600, 600], '4/3': [640, 480], '16/9': [1280, 720]} %}
+{% set ratio = ratio in sizes|keys ? ratio : '2/3' %}
+{% set alt = alt ?: 'Imagem' %}
+{% set src = mobile ?: desktop %}
+{% set eager = eager or not lazy %}
+{% set classes = 'border app-picture app-picture--' ~ ratio|replace({'/': 'x'}) %}
+{% if src %}
+    <picture {{ attributes.defaults({class: classes}) }}>
+        {% if desktop %}<source media="(min-width: 768px)" srcset="{{ desktop }}">{% endif %}
+        <img src="{{ src }}" alt="{{ alt }}" width="{{ sizes[ratio][0] }}" height="{{ sizes[ratio][1] }}" class="app-picture__img" decoding="async"
+            {%- if eager %} loading="eager" fetchpriority="high"{% else %} loading="lazy"{% endif %}>
+        <span class="app-picture__fallback" aria-hidden="true"><twig:Ui:Icon name="book" size="2.5rem" />Imagem indisponível</span>
+    </picture>
+{% else %}
+    <div {{ attributes.defaults({class: classes ~ ' app-picture--placeholder', role: 'img', 'aria-label': alt}) }}>
+        <span class="app-picture__fallback" aria-hidden="true"><twig:Ui:Icon name="book" size="2.5rem" />Sem imagem</span>
+    </div>
+{% endif %}

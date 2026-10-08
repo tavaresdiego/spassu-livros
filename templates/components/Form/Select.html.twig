@@ -1,0 +1,13 @@
+{# Select simples (fora do Symfony Form). options: {valor: rótulo}; placeholder vira a opção vazia. #}
+{% props name = null, label = null, options = {}, value = null, placeholder = null, help = null %}
+{% set id = attributes.render('id') ?? ('select-' ~ name) %}
+<div class="app-field">
+    {% if label %}<label for="{{ id }}" class="form-label">{{ label }}</label>{% endif %}
+    <select id="{{ id }}" name="{{ name }}"{% if help %} aria-describedby="{{ id }}-help"{% endif %} {{ attributes.defaults({class: 'form-select form-select-sm ps-3'}) }}>
+        {% if placeholder is not null %}<option value="">{{ placeholder }}</option>{% endif %}
+        {% for optionValue, optionLabel in options %}
+            <option value="{{ optionValue }}"{% if value is not null and optionValue ~ '' == value ~ '' %} selected{% endif %}>{{ optionLabel }}</option>
+        {% endfor %}
+    </select>
+    {% if help %}<div id="{{ id }}-help" class="form-text">{{ help }}</div>{% endif %}
+</div>

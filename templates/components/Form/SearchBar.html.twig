@@ -1,0 +1,10 @@
+{# Busca por título ou autor (GET /busca?q=). size: sm|md|lg. O id do input vem do atributo id (padrão "busca"). #}
+{% props value = '', placeholder = 'Buscar por título ou autor', size = 'md', label = 'Buscar livros', buttonLabel = 'Buscar' %}
+{% set inputId = attributes.render('id') ?? 'busca' %}
+<form method="get" action="{{ path('app_search') }}" role="search" {{ attributes.defaults({class: 'app-search'}) }}>
+    <label for="{{ inputId }}" class="visually-hidden">{{ label }}</label>
+    <div class="input-group{{ size == 'lg' ? ' input-group-lg' : (size == 'sm' ? ' input-group-sm' : '') }}">
+        <input type="search" id="{{ inputId }}" name="q" value="{{ value }}" placeholder="{{ placeholder }}" class="form-control form-control-sm ps-3" autocomplete="off" enterkeyhint="search">
+        <twig:Ui:Button type="submit" icon="search" variant="primary" :size="size">{{ buttonLabel }}</twig:Ui:Button>
+    </div>
+</form>

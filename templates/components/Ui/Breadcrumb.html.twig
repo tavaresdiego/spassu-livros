@@ -1,0 +1,13 @@
+{# items: [{label: 'Início', href: '/'}, {label: 'Atual'}] — o último é a página atual #}
+{% props items = [] %}
+<nav aria-label="Trilha de navegação" {{ attributes.defaults({class: 'app-breadcrumb'}) }}>
+    <ol class="breadcrumb">
+        {% for item in items %}
+            {% if loop.last or item.href is not defined %}
+                <li class="breadcrumb-item active" aria-current="page">{{ item.label }}</li>
+            {% else %}
+                <li class="breadcrumb-item"><a href="{{ item.href }}">{{ item.label }}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ol>
+</nav>

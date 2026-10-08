@@ -1,0 +1,20 @@
+{#
+    Card de livro: capa (Ui:Picture), título (link que cobre o card), autores, assuntos e preço.
+    book: Livro ou array com as mesmas chaves · headingLevel: nível do título · eager: capa sem lazy (primeiras da página)
+#}
+{% props book = null, headingLevel = 3, eager = false %}
+{% set url = path('app_book_show', {slug: book.titulo|slug, id: book.codl}) %}
+<article {{ attributes.defaults({class: 'bg-white bg-opacity-50 rounded-3 h-100 app-book-card'}) }}>
+    <div class="app-book-card__media">
+        <twig:Ui:Picture :mobile="book.imagemMobileUrl" :desktop="book.imagemDesktopUrl" :alt="'Capa do livro ' ~ book.titulo" ratio="2/3" :eager="eager" />
+    </div>
+    <div class="card-body app-book-card__body">
+        <twig:Book:Subjects :assuntos="book.assuntos" />
+
+        <h{{ headingLevel }} class="app-book-card__title">
+            <a href="{{ url }}" class="stretched-link text-truncate d-block">{{ book.titulo }}</a>
+        </h{{ headingLevel }}>
+        <twig:Book:Authors :autores="book.autores" />
+        <twig:Ui:Price :value="book.valor" class="app-book-card__price" />
+    </div>
+</article>

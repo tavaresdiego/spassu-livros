@@ -1,0 +1,181 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Styleguide{% endblock %}
+{% block meta_description %}Documentação viva dos componentes e tokens de design do Spassu Livros.{% endblock %}
+
+{% block breadcrumb %}
+    <twig:Ui:Breadcrumb :items="[{label: 'Início', href: path('app_home')}, {label: 'Styleguide'}]" />
+{% endblock %}
+
+{% block body %}
+    <twig:Layout:PageHeader title="Styleguide" subtitle="Componentes Twig (templates/components) e tokens de public/css/custom.css. Disponível só fora de produção." />
+
+    <nav class="app-styleguide__nav" aria-label="Seções do styleguide">
+        {% for anchor, label in {tokens: 'Tokens', logo: 'Logo', botoes: 'Botões', badges: 'Badges', alertas: 'Alertas', precos: 'Preço', imagens: 'Imagens', livros: 'Livros', formularios: 'Formulários', navegacao: 'Navegação', estados: 'Estados vazios', layout: 'Layout'} %}
+            <twig:Ui:Badge variant="outline" :href="'#' ~ anchor">{{ label }}</twig:Ui:Badge>
+        {% endfor %}
+    </nav>
+
+    {# ------------------------------------------------------------------ #}
+    <twig:Layout:Section id="tokens" title="Tokens de design">
+        <h3 class="h6">Cores</h3>
+        <ul class="app-swatches">
+            {% for name, label in {paper: 'Papel', surface: 'Superfície', ink: 'Tinta (texto)', muted: 'Texto secundário', brand: 'Marca #f94615', primary: 'Primária (preto)', accent: 'Cinza suave', success: 'Sucesso', danger: 'Erro'} %}
+                <li class="app-swatch app-swatch--{{ name }}"><span class="app-swatch__label">{{ label }}<br><code>--app-color-{{ name }}</code></span></li>
+            {% endfor %}
+        </ul>
+        <h3 class="h6">Tipografia</h3>
+        <div class="app-styleguide__demo app-styleguide__demo--stack">
+            <p class="app-type-sample--serif fs-3 mb-0">Títulos em serif do sistema</p>
+            <p class="app-type-sample--light mb-0">Poppins 200 (light): texto de apoio</p>
+            <p class="app-type-sample--regular mb-0">Poppins 400 (regular): corpo do texto</p>
+            <p class="app-type-sample--medium mb-0">Poppins 500 (medium): corpo do texto com peso médio</p>
+            <p class="app-type-sample--bold mb-0">Poppins 700 (bold): destaques e rótulos</p>
+        </div>
+    </twig:Layout:Section>
+
+    {# ------------------------------------------------------------------ #}
+    <twig:Layout:Section id="logo" title="Ui:Logo">
+        <div class="app-styleguide__demo">
+            <twig:Ui:Logo />
+        </div>
+        <pre class="app-styleguide__code"><code>{% verbatim %}<twig:Ui:Logo class="app-brand__logo" />{% endverbatim %}</code></pre>
+    </twig:Layout:Section>
+
+    {# ------------------------------------------------------------------ #}
+    <twig:Layout:Section id="botoes" title="Ui:Button e Ui:Icon">
+        <div class="app-styleguide__demo">
+            {% for variant in ['primary', 'outline-primary', 'secondary', 'outline-secondary', 'danger', 'outline-danger', 'link'] %}
+                <twig:Ui:Button :variant="variant">{{ variant }}</twig:Ui:Button>
+            {% endfor %}
+        </div>
+        <div class="app-styleguide__demo">
+            <twig:Ui:Button size="sm" icon="plus">Pequeno</twig:Ui:Button>
+            <twig:Ui:Button icon="plus">Médio</twig:Ui:Button>
+            <twig:Ui:Button size="lg" icon="plus">Grande</twig:Ui:Button>
+            <twig:Ui:Button href="#botoes" variant="outline-primary" icon="arrow-right">Link</twig:Ui:Button>
+            <twig:Ui:Button disabled>Desabilitado</twig:Ui:Button>
+            <twig:Ui:Button href="#botoes" disabled variant="outline-primary">Link desabilitado</twig:Ui:Button>
+            <twig:Ui:Button icon="pencil" iconOnly label="Editar">Editar</twig:Ui:Button>
+            <twig:Ui:Button icon="trash" iconOnly label="Excluir" variant="outline-danger" size="sm">Excluir</twig:Ui:Button>
+            <twig:Ui:CloseButton />
+        </div>
+        <div class="app-styleguide__demo">
+            {% for icon in ['search', 'plus', 'pencil', 'trash', 'download', 'book', 'arrow-left', 'arrow-right', 'x', 'check', 'alert', 'info', 'printer', 'menu', 'user', 'tag', 'image'] %}
+                <twig:Ui:Icon :name="icon" size="1.5rem" :label="icon" />
+            {% endfor %}
+        </div>
+        <pre class="app-styleguide__code"><code>{% verbatim %}<twig:Ui:Button variant="outline-primary" size="sm" icon="pencil" :href="path('admin_livro_edit', {id: 1})">Editar</twig:Ui:Button>
+<twig:Ui:Button type="submit" disabled>Salvar</twig:Ui:Button>
+<twig:Ui:Button icon="trash" iconOnly label="Excluir livro">Excluir</twig:Ui:Button>
+<twig:Ui:Icon name="search" size="1.5rem" label="Buscar" />{% endverbatim %}</code></pre>
+    </twig:Layout:Section>
+
+    {# ------------------------------------------------------------------ #}
+    <twig:Layout:Section id="badges" title="Ui:Badge">
+        <div class="app-styleguide__demo">
+            {% for variant in ['accent', 'primary', 'secondary', 'outline', 'light', 'success', 'danger'] %}
+                <twig:Ui:Badge :variant="variant">{{ variant }}</twig:Ui:Badge>
+            {% endfor %}
+            <twig:Ui:Badge variant="accent" href="#badges">com link</twig:Ui:Badge>
+        </div>
+        <pre class="app-styleguide__code"><code>{% verbatim %}<twig:Ui:Badge variant="accent" :href="path('app_subject', {slug: 'romance', id: 1})">Romance</twig:Ui:Badge>{% endverbatim %}</code></pre>
+    </twig:Layout:Section>
+
+    {# ------------------------------------------------------------------ #}
+    <twig:Layout:Section id="alertas" title="Ui:Alert">
+        <div class="app-styleguide__demo app-styleguide__demo--stack">
+            <twig:Ui:Alert type="success">Livro cadastrado com sucesso.</twig:Ui:Alert>
+            <twig:Ui:Alert type="info">Use o filtro para refinar a listagem.</twig:Ui:Alert>
+            <twig:Ui:Alert type="warning">O valor foi arredondado para duas casas.</twig:Ui:Alert>
+            <twig:Ui:Alert type="danger" dismissible>Este autor está vinculado a livros e não pode ser excluído.</twig:Ui:Alert>
+        </div>
+        <pre class="app-styleguide__code"><code>{% verbatim %}<twig:Ui:Alert type="danger" dismissible>Mensagem</twig:Ui:Alert>{% endverbatim %}</code></pre>
+    </twig:Layout:Section>
+
+    {# ------------------------------------------------------------------ #}
+    <twig:Layout:Section id="precos" title="Ui:Price">
+        <div class="app-styleguide__demo">
+            <twig:Ui:Price value="39.9" />
+            <twig:Ui:Price value="1234.56" size="lg" />
+            <twig:Ui:Price value="12" muted />
+            <twig:Ui:Price :value="null" />
+        </div>
+        <pre class="app-styleguide__code"><code>{% verbatim %}<twig:Ui:Price :value="livro.valor" size="lg" />{% endverbatim %}</code></pre>
+    </twig:Layout:Section>
+
+    {# ------------------------------------------------------------------ #}
+    <twig:Layout:Section id="imagens" title="Ui:Picture">
+        <div class="app-styleguide__demo">
+            <div class="app-styleguide__picture"><twig:Ui:Picture alt="Sem URL: placeholder" /></div>
+            <div class="app-styleguide__picture"><twig:Ui:Picture mobile="/imagem-inexistente.jpg" alt="URL quebrada: fallback via JS" /></div>
+            <div class="app-styleguide__picture"><twig:Ui:Picture ratio="1/1" alt="Quadrada" /></div>
+            <div class="app-styleguide__picture"><twig:Ui:Picture ratio="16/9" alt="16 por 9" /></div>
+        </div>
+        <pre class="app-styleguide__code"><code>{% verbatim %}<twig:Ui:Picture :mobile="livro.imagemMobileUrl" :desktop="livro.imagemDesktopUrl" :alt="'Capa do livro ' ~ livro.titulo" ratio="2/3" eager /> {% endverbatim %}</code></pre>
+    </twig:Layout:Section>
+
+    {# ------------------------------------------------------------------ #}
+    <twig:Layout:Section id="livros" title="Book:Card, Book:Grid, Book:Authors, Book:Subjects">
+        <twig:Book:Grid :books="[book, brokenBook]" />
+        <div class="app-styleguide__demo app-styleguide__demo--stack mt-3">
+            <twig:Book:Authors :autores="[{nome: 'Machado de Assis'}, {nome: 'José de Alencar'}]" linked size="lg" />
+            <twig:Book:Subjects :assuntos="assuntos" />
+            <twig:Book:Subjects :assuntos="assuntos" :linked="false" variant="outline" />
+        </div>
+        <pre class="app-styleguide__code"><code>{% verbatim %}<twig:Book:Grid :books="page.items" headingLevel="2" eagerCount="2" />
+<twig:Book:Card :book="livro" />
+<twig:Book:Authors :autores="livro.autores" linked />
+<twig:Book:Subjects :assuntos="livro.assuntos" />{% endverbatim %}</code></pre>
+    </twig:Layout:Section>
+
+    {# ------------------------------------------------------------------ #}
+    <twig:Layout:Section id="formularios" title="Form:Input, Form:Select, Form:SearchBar, Form:FilterBar">
+        <div class="app-styleguide__demo app-styleguide__demo--stack">
+            <twig:Form:Input name="sg-titulo" label="Título" placeholder="Ex.: Dom Casmurro" help="Até 40 caracteres." />
+            <twig:Form:Input name="sg-nome" label="Nome (com erro)" value="" error="Informe o nome do autor." />
+            <twig:Form:Input name="sg-codigo" label="Código (desabilitado)" value="42" disabled />
+            <twig:Form:Select name="sg-assunto" label="Assunto" placeholder="Todos" :options="{1: 'Romance', 2: 'Clássicos'}" value="2" />
+            <twig:Form:SearchBar id="sg-busca" />
+            <twig:Form:FilterBar route="app_styleguide" id="sg-filtro" value="machado" />
+        </div>
+        <pre class="app-styleguide__code"><code>{% verbatim %}<twig:Form:Input name="nome" label="Nome" :error="erro" help="Até 40 caracteres." />
+<twig:Form:Select name="assunto" label="Assunto" placeholder="Todos" :options="{1: 'Romance'}" />
+<twig:Form:SearchBar size="lg" />
+<twig:Form:FilterBar route="admin_autor_index" :value="filter" />{% endverbatim %}</code></pre>
+        <p class="app-text-muted">Formulários do Symfony usam o tema <code>templates/form/theme.html.twig</code> (erros inline com aria-describedby; valor em R$ com máscara).</p>
+    </twig:Layout:Section>
+
+    {# ------------------------------------------------------------------ #}
+    <twig:Layout:Section id="navegacao" title="Ui:Breadcrumb, Ui:Pagination, Ui:RowActions, Ui:ConfirmDelete">
+        <div class="app-styleguide__demo app-styleguide__demo--stack">
+            <twig:Ui:Breadcrumb :items="[{label: 'Início', href: '#'}, {label: 'Romance', href: '#'}, {label: 'Dom Casmurro'}]" />
+            <twig:Ui:Pagination :page="page" pages="9" route="app_styleguide" label="Paginação de exemplo" />
+            <twig:Ui:RowActions editHref="#navegacao" deleteAction="#navegacao" tokenId="styleguide-1" itemLabel="Dom Casmurro" />
+        </div>
+        <pre class="app-styleguide__code"><code>{% verbatim %}<twig:Ui:Pagination :page="page.page" :pages="page.pages" route="app_search" :params="{q: term}" />
+<twig:Ui:RowActions :editHref="..." :deleteAction="..." :tokenId="'delete-livro-' ~ livro.codl" :itemLabel="livro.titulo" />
+<twig:Ui:ConfirmDelete :action="..." tokenId="delete-autor-7" itemLabel="Machado de Assis" />{% endverbatim %}</code></pre>
+    </twig:Layout:Section>
+
+    {# ------------------------------------------------------------------ #}
+    <twig:Layout:Section id="estados" title="Ui:EmptyState">
+        <twig:Ui:EmptyState icon="search" title="Nenhum livro encontrado" message="Confira a grafia ou tente outro termo." headingLevel="3">
+            <twig:Ui:Button href="#estados" variant="outline-primary" icon="arrow-left">Voltar</twig:Ui:Button>
+        </twig:Ui:EmptyState>
+    </twig:Layout:Section>
+
+    {# ------------------------------------------------------------------ #}
+    <twig:Layout:Section id="layout" title="Layout:PageHeader, Layout:Section, Layout:NavLink" moreHref="#layout" moreLabel="Ver mais">
+        <div class="app-styleguide__demo">
+            <ul class="nav">
+                <li class="nav-item"><twig:Layout:NavLink href="#layout" active>Ativo (aria-current)</twig:Layout:NavLink></li>
+                <li class="nav-item"><twig:Layout:NavLink href="#layout" icon="book">Inativo</twig:Layout:NavLink></li>
+            </ul>
+        </div>
+        <pre class="app-styleguide__code"><code>{% verbatim %}<twig:Layout:PageHeader title="Livros" subtitle="12 registros">
+    <twig:block name="actions"><twig:Ui:Button icon="plus">Novo</twig:Ui:Button></twig:block>
+</twig:Layout:PageHeader>
+<twig:Layout:Section id="assunto-1" title="Romance" :moreHref="path('app_subject', {slug: 'romance', id: 1})">...</twig:Layout:Section>{% endverbatim %}</code></pre>
+    </twig:Layout:Section>
+{% endblock %}

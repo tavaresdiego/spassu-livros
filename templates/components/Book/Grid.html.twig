@@ -1,0 +1,10 @@
+{#
+    Grade responsiva de Book:Card (2 colunas no mobile, 3 no tablet, 4 a 6 no desktop).
+    eagerCount: quantas capas iniciais carregam sem lazy · headingLevel: nível do título dos cards
+#}
+{% props books = [], headingLevel = 3, eagerCount = 0 %}
+<ul {{ attributes.defaults({class: 'app-book-grid', role: 'list'}) }}>
+    {% for book in books %}
+        <li><twig:Book:Card :book="book" :headingLevel="headingLevel" :eager="loop.index <= eagerCount" /></li>
+    {% endfor %}
+</ul>

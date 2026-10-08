@@ -1,0 +1,29 @@
+{#
+    Botão de excluir que abre um modal Bootstrap de confirmação; o form envia POST com o token CSRF tokenId.
+    O nome acessível do botão inclui o item ("Excluir Machado de Assis").
+#}
+{% props action = null, tokenId = null, itemLabel = 'este item', label = 'Excluir', size = 'sm' %}
+{% set modalId = 'confirm-' ~ tokenId %}
+{# Dentro do conteúdo do Ui:Button, "label" seria a prop do próprio botão; por isso o texto vai em outra variável #}
+{% set buttonText = label %}
+<twig:Ui:Button variant="outline-danger" :size="size" icon="trash" :label="label ~ ' ' ~ itemLabel" data-bs-toggle="modal" data-bs-target="#{{ modalId }}" {{ ...attributes }}>{{ buttonText }}</twig:Ui:Button>
+<div class="modal fade app-confirm-delete" id="{{ modalId }}" tabindex="-1" aria-labelledby="{{ modalId }}-title" aria-describedby="{{ modalId }}-body" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title fs-5" id="{{ modalId }}-title">Confirmar exclusão</h2>
+                <twig:Ui:CloseButton dismiss="modal" />
+            </div>
+            <div class="modal-body" id="{{ modalId }}-body">
+                Deseja excluir <strong>{{ itemLabel }}</strong>? Esta ação não pode ser desfeita.
+            </div>
+            <div class="modal-footer">
+                <twig:Ui:Button variant="secondary" data-bs-dismiss="modal">Cancelar</twig:Ui:Button>
+                <form method="post" action="{{ action }}">
+                    <input type="hidden" name="_token" value="{{ csrf_token(tokenId) }}">
+                    <twig:Ui:Button type="submit" variant="danger" icon="trash">Excluir</twig:Ui:Button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

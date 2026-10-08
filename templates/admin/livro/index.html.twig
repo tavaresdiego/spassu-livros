@@ -1,0 +1,58 @@
+{% extends 'admin/_index_page.html.twig' %}
+{% set heading = 'Livros' %}
+{% set new_route = 'admin_livro_new' %}
+{% set new_label = 'Novo livro' %}
+{% set pagination_params = filter.toQuery %}
+
+{% block empty_title %}{{ filter.isEmpty ? 'Nenhum livro cadastrado' : 'Nenhum livro encontrado' }}{% endblock %}
+
+{% block filters %}
+    <form method="get" action="{{ path('admin_livro_index') }}" role="search" class="app-filter-form" aria-label="Filtrar livros">
+        <div class="row g-3 align-items-end mb-4">
+            <div class="col-12 col-md-6 col-lg-3"><twig:Form:Input name="titulo" label="Título" type="search" :value="filter.titulo" /></div>
+            <div class="col-12 col-md-6 col-lg-3"><twig:Form:Input name="autor" label="Autor" type="search" :value="filter.autor" /></div>
+            <div class="col-12 col-md-6 col-lg-2">
+                <twig:Form:Select name="assunto" label="Assunto" placeholder="Todos" :value="filter.assunto" :options="assuntos|reduce((carry, a) => carry + {(a.codAs): a.descricao}, {})" />
+            </div>
+            <div class="col-12 col-md-6 col-lg-2"><twig:Form:Input name="editora" label="Editora" type="search" :value="filter.editora" /></div>
+            <div class="col-12 col-lg-2 d-flex gap-2">
+
+                <twig:Ui:Button type="submit" icon="search" variant="primary">
+                    {% if filter.isEmpty %}Filtrar{% endif %}
+                </twig:Ui:Button>
+                {% if not filter.isEmpty %}
+                    <twig:Ui:Button :href="path('admin_livro_index')" icon="x"  variant="outline-secondary">Limpar</twig:Ui:Button>
+                {% endif %}
+            </div>
+        </div>
+    </form>
+{% endblock %}
+
+{% block table_head %}
+    <tr>
+        <th scope="col">Título</th>
+        <th scope="col">Autores</th>
+        <th scope="col">Assuntos</th>
+        <th scope="col">Editora</th>
+        <th scope="col">Ano</th>
+        <th scope="col" class="text-end">Valor</th>
+        <th scope="col">Ações</th>
+    </tr>
+{% endblock %}
+
+{% block table_rows %}
+    {% for livro in page.items %}
+        <tr>
+            <th scope="row"><a href="{{ path('app_book_show', {slug: livro.titulo|slug, id: livro.codl}) }}">{{ livro.titulo }}</a></th>
+            <td><twig:Book:Authors :autores="livro.autores" /></td>
+            <td><twig:Book:Subjects :assuntos="livro.assuntos" :linked="false" variant="outline" /></td>
+            <td>{{ livro.editora }}</td>
+            <td>{{ livro.anoPublicacao }}</td>
+            <td class="text-end"><twig:Ui:Price :value="livro.valor" /></td>
+            <td class="app-table__actions">
+                <twig:Ui:RowActions :editHref="path('admin_livro_edit', {id: livro.codl})" :deleteAction="path('admin_livro_delete', {id: livro.codl})"
+                    :tokenId="'delete-livro-' ~ livro.codl" :itemLabel="livro.titulo" />
+            </td>
+        </tr>
+    {% endfor %}
+{% endblock %}

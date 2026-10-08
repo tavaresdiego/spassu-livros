@@ -1,0 +1,10 @@
+{# Título da página (o único h1) + subtítulo + slot padrão (abaixo do título) + slot "actions" (à direita). #}
+{% props title = '', subtitle = null %}
+<header {{ attributes.defaults({class: 'app-page-header align-items-baseline'}) }}>
+    <div class="app-page-header__text">
+        <h1 class="app-page-header__title">{{ title }}</h1>
+        {% if subtitle %}<p class="app-page-header__subtitle">{{ subtitle }}</p>{% endif %}
+        {% block content %}{% endblock %}
+    </div>
+    <div class="app-page-header__actions">{% block actions %}{% endblock %}</div>
+</header>

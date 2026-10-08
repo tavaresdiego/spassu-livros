@@ -1,0 +1,11 @@
+{# Filtro GET das listagens do admin (?q=). Com valor preenchido, mostra o link "Limpar". #}
+{% props route = null, value = '', placeholder = 'Filtrar por nome ou código', label = 'Filtrar registros' %}
+{% set inputId = attributes.render('id') ?? 'filtro' %}
+<form method="get" action="{{ path(route) }}" role="search" {{ attributes.defaults({class: 'app-filter-bar'}) }}>
+    <label for="{{ inputId }}" class="visually-hidden">{{ label }}</label>
+    <div class="input-group">
+        <input type="search" id="{{ inputId }}" name="q" value="{{ value }}" placeholder="{{ placeholder }}" class="form-control form-control-sm" autocomplete="off">
+        <twig:Ui:Button type="submit" icon="search" variant="primary">Filtrar</twig:Ui:Button>
+        {% if value %}<twig:Ui:Button :href="path(route)" icon="x" iconOnly variant="primary">Limpar</twig:Ui:Button>{% endif %}
+    </div>
+</form>

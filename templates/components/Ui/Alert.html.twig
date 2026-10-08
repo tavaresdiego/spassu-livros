@@ -1,0 +1,12 @@
+{#
+    Alerta Bootstrap com ícone. type: success|danger|warning|info (outros tipos de flash caem em info).
+    role="alert" para danger/warning (interrompe o leitor de tela); role="status" para os demais.
+#}
+{% props type = 'info', dismissible = false, icon = true %}
+{% set icons = {success: 'check', danger: 'alert', warning: 'alert', info: 'info'} %}
+{% set type = type in icons|keys ? type : 'info' %}
+<div {{ attributes.defaults({class: 'align-items-center mb-5 alert alert-' ~ type ~ ' app-alert' ~ (dismissible ? ' alert-dismissible fade show' : ''), role: type in ['danger', 'warning'] ? 'alert' : 'status'}) }}>
+    {% if icon %}<twig:Ui:Icon :name="icons[type]" size="1rem" class="app-alert__icon" />{% endif %}
+    <div class="app-alert__content">{% block content %}{% endblock %}</div>
+    {% if dismissible %}<twig:Ui:CloseButton dismiss="alert" label="Fechar aviso" />{% endif %}
+</div>

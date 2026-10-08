@@ -1,0 +1,6 @@
+{#
+    Logo do projeto (public/images/logo-spassu-livros.svg, proporção 200x74). A altura vem do CSS (.app-logo).
+    alt: nome acessível (o SVG já traz o texto "Spassu Livros").
+#}
+{% props alt = 'Spassu Livros' %}
+<img src="{{ asset('images/logo-spassu-livros.svg') }}" width="200" height="74" {{ attributes.defaults({class: 'app-logo', alt: alt}) }}>

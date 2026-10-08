@@ -1,0 +1,29 @@
+{#
+    Ícones SVG inline (traço, 24x24). Decorativo por padrão (aria-hidden); com label vira role="img".
+    name: search|plus|pencil|trash|download|book|arrow-left|arrow-right|x|check|alert|info|printer|menu|user|tag|image
+#}
+{% props name = 'book', size = '1em', label = null %}
+{% set paths = {
+    'search': '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/>',
+    'plus': '<path d="M12 5v14M5 12h14"/>',
+    'pencil': '<path d="M17 3a2.8 2.8 0 0 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/>',
+    'trash': '<path d="M3 6h18"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2"/><path d="M10 11v6M14 11v6"/>',
+    'download': '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/>',
+    'book': '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/>',
+    'arrow-left': '<path d="M19 12H5"/><path d="m12 19-7-7 7-7"/>',
+    'arrow-right': '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>',
+    'x': '<path d="M18 6 6 18M6 6l12 12"/>',
+    'check': '<circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/>',
+    'alert': '<path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/>',
+    'info': '<circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/>',
+    'printer': '<path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/>',
+    'menu': '<path d="M4 6h16M4 12h16M4 18h16"/>',
+    'user': '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+    'tag': '<path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8Z"/><path d="M7 7h.01"/>',
+    'image': '<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/>',
+} %}
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="{{ size }}" height="{{ size }}" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"
+    {{ attributes.defaults({class: 'app-icon'}) }}
+    {% if label %}role="img" aria-label="{{ label }}"{% else %}aria-hidden="true"{% endif %}>
+    {{- (paths[name] ?? paths['book'])|raw -}}
+</svg>

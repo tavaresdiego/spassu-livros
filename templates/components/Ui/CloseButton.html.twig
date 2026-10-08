@@ -1,0 +1,3 @@
+{# Botão "fechar" do Bootstrap. dismiss: alert|modal|offcanvas|toast (null = sem data-bs-dismiss) #}
+{% props label = 'Fechar', dismiss = null %}
+<button type="button" {{ attributes.defaults({class: 'btn-close app-close'}) }}{% if dismiss %} data-bs-dismiss="{{ dismiss }}"{% endif %} aria-label="{{ label }}"></button>

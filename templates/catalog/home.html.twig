@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Início{% endblock %}
+{% block header_search %}{% endblock %}
+
+{% block body %}
+    <section class="app-hero" aria-labelledby="hero-title">
+        <p class="app-hero__eyebrow text-warning">Livraria Spassu</p>
+        <h1 id="hero-title" class="app-hero__title mb-0">Encontre seu próximo livro</h1>
+        <p class="app-hero__lead text-white text-opacity-75 mb-5">Busque por título ou autor, ou explore as estantes por assunto.</p>
+        <twig:Form:SearchBar size="sm" class="app-hero__search" />
+    </section>
+
+    {% set primeiraEstante = true %}
+    {% for assunto in assuntos %}
+        {% set livros = livrosPorAssunto[assunto.codAs] ?? [] %}
+        {% if livros is not empty %}
+            <twig:Layout:Section :id="'assunto-' ~ assunto.codAs" :title="assunto.descricao"
+                :moreHref="path('app_subject', {slug: assunto.descricao|slug, id: assunto.codAs})" :moreLabel="'Ver mais (' ~ (totais[assunto.codAs] ?? livros|length) ~ ')'">
+                {# Só as primeiras capas da primeira estante carregam sem lazy (estão acima da dobra) #}
+                <twig:Book:Grid :books="livros" :eagerCount="primeiraEstante ? 2 : 0" />
+            </twig:Layout:Section>
+            {% set primeiraEstante = false %}
+        {% endif %}
+    {% else %}
+        <twig:Ui:EmptyState title="Nenhum livro cadastrado" message="Cadastre livros no painel administrativo para vê-los aqui.">
+            <twig:Ui:Button :href="path('admin_livro_new')" icon="plus">Cadastrar livro</twig:Ui:Button>
+        </twig:Ui:EmptyState>
+    {% endfor %}
+{% endblock %}

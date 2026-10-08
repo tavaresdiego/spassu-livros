@@ -1,0 +1,25 @@
+{# Página de formulário comum do admin. Espera: form, entity, heading, back_route, section_label #}
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ heading }}{% endblock %}
+
+{% block breadcrumb %}
+    <twig:Ui:Breadcrumb :items="[{label: 'Início', href: path('app_home')}, {label: section_label, href: path(back_route)}, {label: heading}]" />
+{% endblock %}
+
+{% block body %}
+    <twig:Layout:PageHeader :title="heading" subtitle="Campos marcados com * são obrigatórios.">
+        <twig:block name="actions">
+            <twig:Ui:Button variant="outline-secondary" icon="arrow-left" :href="path(back_route)">Voltar</twig:Ui:Button>
+        </twig:block>
+    </twig:Layout:PageHeader>
+
+    {{ form_start(form, {attr: {class: 'app-form', novalidate: 'novalidate'}}) }}
+        {{ form_errors(form) }}
+        {% block fields %}{{ form_rest(form) }}{% endblock %}
+        <div class="app-form__actions">
+            <twig:Ui:Button type="submit" icon="check">Salvar</twig:Ui:Button>
+            <twig:Ui:Button variant="outline-secondary" :href="path(back_route)">Cancelar</twig:Ui:Button>
+        </div>
+    {{ form_end(form) }}
+{% endblock %}

@@ -1,0 +1,15 @@
+{# Seção com título (h2) e link opcional "ver mais". Conteúdo no slot padrão. #}
+{% props title = '', id = null, moreHref = null, moreLabel = 'Ver mais', headingLevel = 2 %}
+{% set headingId = id ? id ~ '-titulo' : null %}
+<section {{ attributes.defaults({class: 'app-section'}) }}{% if id %} id="{{ id }}" aria-labelledby="{{ headingId }}"{% endif %}>
+    <div class="app-section__header">
+        <h{{ headingLevel }} class="app-section__title"{% if headingId %} id="{{ headingId }}"{% endif %}>{{ title }}</h{{ headingLevel }}>
+        {% if moreHref %}
+            <a class="app-section__more" href="{{ moreHref }}">
+                <twig:Ui:Icon name="plus" />
+                {{ moreLabel }}<span class="visually-hidden"> em {{ title }}</span>
+            </a>
+        {% endif %}
+    </div>
+    {% block content %}{% endblock %}
+</section>

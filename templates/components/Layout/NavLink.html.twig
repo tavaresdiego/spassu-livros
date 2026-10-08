@@ -1,0 +1,15 @@
+{#
+    Link de navegação com aria-current quando ativo.
+    variant: nav (navbar) | dropdown (item de dropdown) · Sem href vira <button> (ex.: toggle de dropdown).
+#}
+{% props href = null, active = false, variant = 'nav', icon = null %}
+{% set classes = (variant == 'dropdown' ? 'dropdown-item' : 'nav-link') ~ (active ? ' active') %}
+{% if href %}
+    <a href="{{ href }}" {{ attributes.defaults({class: classes}) }}{% if active %} aria-current="page"{% endif %}>
+        {%- if icon %}<twig:Ui:Icon :name="icon" /> {% endif %}{% block content %}{% endblock -%}
+    </a>
+{% else %}
+    <button type="button" {{ attributes.defaults({class: classes}) }}>
+        {%- if icon %}<twig:Ui:Icon :name="icon" /> {% endif %}{{ block('content') }}
+    </button>
+{% endif %}

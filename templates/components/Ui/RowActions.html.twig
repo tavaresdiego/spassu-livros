@@ -1,0 +1,10 @@
+{# Ações de uma linha de tabela do admin: Editar (link) + Excluir (Ui:ConfirmDelete). #}
+{% props editHref = null, deleteAction = null, tokenId = null, itemLabel = 'este item' %}
+<div {{ attributes.defaults({class: 'app-row-actions'}) }}>
+    {% if editHref %}
+        <twig:Ui:Button variant="outline-primary" size="sm" icon="pencil" iconOnly :href="editHref" :label="'Editar ' ~ itemLabel">Editar</twig:Ui:Button>
+    {% endif %}
+    {% if deleteAction %}
+        <twig:Ui:ConfirmDelete :action="deleteAction" :tokenId="tokenId" iconOnly :itemLabel="itemLabel" />
+    {% endif %}
+</div>

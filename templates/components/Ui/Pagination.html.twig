@@ -1,0 +1,40 @@
+{#
+    Paginação com até 2 páginas de cada lado da atual; a atual tem aria-current="page".
+    params: parâmetros extras da rota (ex.: {q: termo}) · label: nome acessível do <nav>
+#}
+{% props page = 1, pages = 1, route = null, params = {}, label = 'Paginação' %}
+{% if pages > 1 %}
+    {% set start = max(1, page - 2) %}
+    {% set end = min(pages, page + 2) %}
+    <nav aria-label="{{ label }}" {{ attributes.defaults({class: 'app-pagination'}) }}>
+        <ul class="pagination justify-content-center flex-wrap">
+            <li class="page-item{{ page <= 1 ? ' disabled' }}">
+                {% if page <= 1 %}
+                    <span class="page-link" aria-hidden="true">&laquo;</span>
+                {% else %}
+                    <a class="page-link" href="{{ path(route, params|merge({page: page - 1})) }}" aria-label="Página anterior" rel="prev">&laquo;</a>
+                {% endif %}
+            </li>
+            {% if start > 1 %}
+                <li class="page-item"><a class="page-link" href="{{ path(route, params|merge({page: 1})) }}" aria-label="Página 1">1</a></li>
+                {% if start > 2 %}<li class="page-item disabled" aria-hidden="true"><span class="page-link">…</span></li>{% endif %}
+            {% endif %}
+            {% for p in start..end %}
+                <li class="page-item{{ p == page ? ' active' }}">
+                    <a class="page-link" href="{{ path(route, params|merge({page: p})) }}" aria-label="Página {{ p }}"{% if p == page %} aria-current="page"{% endif %}>{{ p }}</a>
+                </li>
+            {% endfor %}
+            {% if end < pages %}
+                {% if end < pages - 1 %}<li class="page-item disabled" aria-hidden="true"><span class="page-link">…</span></li>{% endif %}
+                <li class="page-item"><a class="page-link" href="{{ path(route, params|merge({page: pages})) }}" aria-label="Página {{ pages }}">{{ pages }}</a></li>
+            {% endif %}
+            <li class="page-item{{ page >= pages ? ' disabled' }}">
+                {% if page >= pages %}
+                    <span class="page-link" aria-hidden="true">&raquo;</span>
+                {% else %}
+                    <a class="page-link" href="{{ path(route, params|merge({page: page + 1})) }}" aria-label="Próxima página" rel="next">&raquo;</a>
+                {% endif %}
+            </li>
+        </ul>
+    </nav>
+{% endif %}

@@ -1,0 +1,16 @@
+{# Páginas de erro não consultam o banco (o erro pode ser justamente o banco). Espera: heading, message #}
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ heading }}{% endblock %}
+{% block header_search %}{% endblock %}
+{% block nav_subjects %}{% endblock %}
+
+{% block body %}
+    <twig:Ui:EmptyState :title="heading" :message="message" icon="alert" headingLevel="1" class="app-error">
+        <p class="app-error__code">Erro {{ status_code }}</p>
+        <div class="app-cluster justify-content-center">
+            <twig:Ui:Button href="/" icon="arrow-left">Voltar ao início</twig:Ui:Button>
+            <twig:Ui:Button href="/busca" variant="outline-primary" icon="search">Buscar livros</twig:Ui:Button>
+        </div>
+    </twig:Ui:EmptyState>
+{% endblock %}

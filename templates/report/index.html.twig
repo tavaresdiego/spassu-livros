@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Relatório por autor{% endblock %}
+{% block meta_description %}Relatório de livros agrupados por autor, com subtotais de quantidade e valor.{% endblock %}
+
+{% block breadcrumb %}
+    <twig:Ui:Breadcrumb :items="[{label: 'Início', href: path('app_home')}, {label: 'Relatório'}]" />
+{% endblock %}
+
+{% block body %}
+    <twig:Layout:PageHeader title="Livros por autor" subtitle="Relatório agrupado por autor.">
+        <twig:block name="actions">
+            <twig:Ui:Button :href="path('app_report_pdf')" icon="download" target="_blank" rel="noopener">Ver PDF</twig:Ui:Button>
+        </twig:block>
+    </twig:Layout:PageHeader>
+
+    {% if autores is empty %}
+        <twig:Ui:EmptyState title="Nenhum livro com autor cadastrado" message="Cadastre livros e vincule autores para gerar o relatório." />
+    {% else %}
+        <p class="app-report__summary text-end mb-0">
+            {{ autores|length }} {{ autores|length == 1 ? 'autor' : 'autores' }} · gerado em {{ 'now'|format_datetime('short', 'short', locale: 'pt_BR') }}
+        </p>
+        {% for autor in autores %}
+            <section id="autor-{{ autor.codAu }}" class="app-report__group" aria-labelledby="autor-{{ autor.codAu }}-nome">
+                <h2 class="app-report__author" id="autor-{{ autor.codAu }}-nome">{{ autor.nome }}</h2>
+                <div class="table-responsive app-table-wrapper">
+                    <table class="table table-sm table-striped align-middle app-table app-report__table" aria-labelledby="autor-{{ autor.codAu }}-nome">
+                        <thead>
+                            <tr>
+                                <th scope="col" width="40%">Título</th>
+                                <th scope="col" width="20%">Editora</th>
+                                <th scope="col" width="10%" class="text-end">Edição</th>
+                                <th scope="col" width="10%">Ano</th>
+                                <th scope="col" width="20%">Assuntos</th>
+                                <th scope="col" width="10%" class="text-end">Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for livro in autor.livros %}
+                                <tr>
+                                    <td><a href="{{ path('app_book_show', {slug: livro.Titulo|slug, id: livro.Codl}) }}">{{ livro.Titulo }}</a></td>
+                                    <td>{{ livro.Editora }}</td>
+                                    <td class="text-end">{{ livro.Edicao }}ª</td>
+                                    <td>{{ livro.AnoPublicacao }}</td>
+                                    <td>{{ livro.Assuntos ?? '—' }}</td>
+                                    <td class="text-end"><twig:Ui:Price :value="livro.Valor" /></td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                        <tfoot>
+                            <tr class="app-report__subtotal">
+                                <th scope="row" colspan="5">
+                                    Subtotal: {{ autor.total }} {{ autor.total == 1 ? 'livro' : 'livros' }}
+                                </th>
+                                <td class="text-end"><twig:Ui:Price :value="autor.valorTotal" class="text-primary" /></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,6 @@
+{# Valor monetário formatado em pt_BR ("R$ 1.234,56"); vazio vira "—". size: md|lg · muted: bool #}
+{% props value = null, currency = 'BRL', size = 'md', muted = false %}
+{% set empty = value is null or value is same as('') %}
+<span {{ attributes.defaults({class: 'app-price' ~ (size == 'lg' ? ' app-price--lg') ~ (muted or empty ? ' app-price--muted')}) }}>
+    {{- empty ? '—' : value|format_currency(currency, locale: 'pt_BR') -}}
+</span>

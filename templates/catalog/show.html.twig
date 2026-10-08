@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ livro.titulo }}{% endblock %}
+{% block meta_description %}{{ livro.titulo }}, de {{ livro.autores|map(a => a.nome)|join(', ') }}. {{ livro.descricao ? livro.descricao|striptags|slice(0, 120) ~ (livro.descricao|length > 120 ? '…') : 'Detalhes, preço e assuntos.' }}{% endblock %}
+
+{% set primeiroAssunto = livro.assuntos.first %}
+
+{% block breadcrumb %}
+    <twig:Ui:Breadcrumb :items="[{label: 'Início', href: path('app_home')}]
+        |merge(primeiroAssunto ? [{label: primeiroAssunto.descricao, href: path('app_subject', {slug: primeiroAssunto.descricao|slug, id: primeiroAssunto.codAs})}] : [])
+        |merge([{label: livro.titulo}])" />
+{% endblock %}
+
+{% block body %}
+    <article class="app-book-detail">
+        <div class="app-book-detail__cover">
+            <twig:Ui:Picture :mobile="livro.imagemMobileUrl" :desktop="livro.imagemDesktopUrl" :alt="'Capa do livro ' ~ livro.titulo" eager />
+        </div>
+        <div class="app-book-detail__info">
+            <twig:Book:Subjects :assuntos="livro.assuntos" />
+            <h1 class="app-book-detail__title">{{ livro.titulo }}</h1>
+            <twig:Book:Authors :autores="livro.autores" linked size="lg" />
+            <twig:Ui:Price :value="livro.valor" size="lg" />
+
+            <dl class="app-book-detail__meta my-4">
+                <dt>Editora</dt><dd>{{ livro.editora ?: '—' }}</dd>
+                <dt>Edição</dt><dd>{{ livro.edicao }}ª</dd>
+                <dt>Ano de publicação</dt><dd>{{ livro.anoPublicacao ?: '—' }}</dd>
+            </dl>
+
+            {% if livro.descricao %}
+                <h2 class="app-book-detail__subtitle">Sinopse</h2>
+                <div class="app-book-detail__description">{{ livro.descricao|nl2br }}</div>
+            {% endif %}
+
+            <div class="app-book-detail__actions">
+                <twig:Ui:Button variant="outline-primary" icon="arrow-left"
+                    :href="primeiroAssunto ? path('app_subject', {slug: primeiroAssunto.descricao|slug, id: primeiroAssunto.codAs}) : path('app_home')">
+                    {{ primeiroAssunto ? 'Mais livros de ' ~ primeiroAssunto.descricao : 'Voltar ao início' }}
+                </twig:Ui:Button>
+            </div>
+        </div>
+    </article>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'admin/_index_page.html.twig' %}
+{% set heading = 'Autores' %}
+{% set new_route = 'admin_autor_new' %}
+{% set new_label = 'Novo autor' %}
+{% set pagination_params = filter ? {q: filter} : {} %}
+
+{% block empty_title %}{{ filter ? 'Nenhum autor encontrado' : 'Nenhum autor cadastrado' }}{% endblock %}
+
+{% block filters %}
+    <twig:Form:FilterBar route="admin_autor_index" :value="filter" placeholder="Filtrar por nome ou código" label="Filtrar autores" class="mb-3" />
+{% endblock %}
+
+{% block table_head %}
+    <tr><th scope="col">Código</th><th scope="col">Nome</th><th scope="col">Ações</th></tr>
+{% endblock %}
+
+{% block table_rows %}
+    {% for autor in page.items %}
+        <tr>
+            <td class="app-table__code">{{ autor.codAu }}</td>
+            <th scope="row">{{ autor.nome }}</th>
+            <td class="app-table__actions">
+                <twig:Ui:RowActions :editHref="path('admin_autor_edit', {id: autor.codAu})" :deleteAction="path('admin_autor_delete', {id: autor.codAu})"
+                    :tokenId="'delete-autor-' ~ autor.codAu" :itemLabel="autor.nome" />
+            </td>
+        </tr>
+    {% endfor %}
+{% endblock %}

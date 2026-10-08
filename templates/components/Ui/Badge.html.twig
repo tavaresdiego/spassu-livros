@@ -1,0 +1,11 @@
+{#
+    Etiqueta. variant: primary|secondary|accent|outline|light|success|danger. Com href vira link.
+#}
+{% props variant = 'secondary', href = null %}
+{% set variantClass = variant in ['accent', 'outline'] ? 'app-badge--' ~ variant : 'text-bg-' ~ variant %}
+{% set classes = 'badge app-badge ' ~ variantClass ~ (href ? ' app-badge--link text-decoration-none' : '') %}
+{% if href %}
+    <a href="{{ href }}" {{ attributes.defaults({class: classes}) }}>{% block content %}{% endblock %}</a>
+{% else %}
+    <span {{ attributes.defaults({class: classes}) }}>{{ block('content') }}</span>
+{% endif %}

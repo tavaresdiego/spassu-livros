@@ -1,0 +1,22 @@
+{#
+    Botão Bootstrap. Com href renderiza <a>, senão <button>.
+    variant: primary|secondary|outline-primary|outline-secondary|danger|outline-danger|link
+    size: sm|md|lg · icon: nome do Ui:Icon · disabled: bool
+    label: nome acessível (aria-label). Obrigatório quando iconOnly = true (o texto do slot fica oculto).
+#}
+{% props variant = 'primary', size = 'md', href = null, type = 'button', icon = null, iconOnly = false, label = null, disabled = false %}
+{% set classes = 'btn btn-' ~ variant ~ (size != 'md' ? ' btn-' ~ size : '') ~ (icon ? ' app-btn--icon' : '') ~ (iconOnly ? ' app-btn--icon-only' : '') %}
+{% set accessibleName = label ?: (iconOnly ? 'Botão' : null) %}
+{% if href %}
+    <a href="{{ disabled ? '#' : href }}" {{ attributes.defaults({class: classes ~ (disabled ? ' disabled' : '')}) }}
+        {%- if accessibleName %} aria-label="{{ accessibleName }}"{% if iconOnly %} title="{{ accessibleName }}"{% endif %}{% endif %}
+        {%- if disabled %} aria-disabled="true" tabindex="-1"{% endif %}>
+        {%- if icon %}<twig:Ui:Icon :name="icon" />{% endif %}{% if iconOnly %}<span class="visually-hidden">{% block content %}{% endblock %}</span>{% else %}{{ block('content') }}{% endif -%}
+    </a>
+{% else %}
+    <button type="{{ type }}" {{ attributes.defaults({class: classes}) }}
+        {%- if accessibleName %} aria-label="{{ accessibleName }}"{% if iconOnly %} title="{{ accessibleName }}"{% endif %}{% endif %}
+        {%- if disabled %} disabled{% endif %}>
+        {%- if icon %}<twig:Ui:Icon :name="icon" />{% endif %}{% if iconOnly %}<span class="visually-hidden">{{ block('content') }}</span>{% else %}{{ block('content') }}{% endif -%}
+    </button>
+{% endif %}

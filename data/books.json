@@ -1,0 +1,958 @@
+{
+    "source": "https://www.googleapis.com/books/v1/volumes",
+    "subjects": [
+        "Ficção",
+        "Tecnologia",
+        "História",
+        "Biografias",
+        "Negócios",
+        "Infantil"
+    ],
+    "books": [
+        {
+            "googleId": "OBwO1nWnQz8C",
+            "titulo": "A música popular no romance brasileiro",
+            "editora": "Editora 34",
+            "edicao": 3,
+            "anoPublicacao": "1992",
+            "valor": "126.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=OBwO1nWnQz8C&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=OBwO1nWnQz8C&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "No fim da década de 1930, com o rádio e o disco difundidos praticamente por todas as regiões do país, alterava-se em profundidade o modo de produção, fruição e circulação da música popular no Brasil. Com ouvido apurado, faro verdadeiramente detetivesco e julgamento implacável, o historiador e crítico musical José Ramos Tinhorão finaliza neste volume seu monumental painel sobre A música popular no romance brasileiro, do Romantismo até os nossos dias. Revelando uma capacidade única para relacionar um número sem precedentes de informações, Tinhorão criou quase uma suma da memória musical de nosso povo. Para tanto, o autor percorre diferentes ambientes regionais, do Nordeste a São Paulo, dos subúrbios à Zona Sul carioca, inventariando obras, estilos, romancistas, personagens, cantores e compositores, registrando as mínimas variações entre a letra original das canções e sua notação escrita. O resultado é um compêndio de valor inestimável sobre a vida brasileira, com tudo o que esta comporta de humor, de invenção e alegria, mas também de impostura, impropriedade e preconceitos de classe.",
+            "autores": [
+                "José Ramos Tinhorão"
+            ],
+            "assuntos": [
+                "Ficção"
+            ]
+        },
+        {
+            "googleId": "KwmfEAAAQBAJ",
+            "titulo": "A literatura no Brasil - Era Modernista",
+            "editora": "Global Editora",
+            "edicao": 4,
+            "anoPublicacao": "2023",
+            "valor": "28.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=KwmfEAAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=KwmfEAAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Segundo Afrânio Coutinho, \"a literatura é uma arte, a arte da palavra, isto é, produto da imaginação criadora\". Com um conhecimento profundo sobre o ofício, Coutinho se tornou um dos maiores contribuidores para a historiografia da literatura brasileira e durante sua trajetória, fez um estudo minucioso sobre o assunto, resultado que pode ser visto na coletânea A literatura no Brasil, dividida em seis volumes – que chega na Global Editora com edições repaginadas e atualizadas. Do romantismo ao realismo brasileiro, Afrânio Coutinho organizou a coletânea de forma que ela ressalte a importância e as características da literatura do nosso país, entendendo como a mesma explora assuntos históricos, dos costumes e das tradições populares, se tornando uma arte madura nos anos 1950 do século XX. Com a Era Modernista em pauta, o quinto volume tem ensaios que tratam dos seguintes temas: \"A revolução modernista\", por Mário da Silva Brito; \"O modernismo na poesia\", por Péricles Eugênio da Silva Ramos; \"Vanguardas\", por Albertus da Costa Marques, Mário Chamie, Álvaro Sá, Joaquim Branco; \"O modernismo na ficção\", com artigos de A. Coutinho, Dirce Côrtes Riedel, J. Alexandre Barbosa, Luís Costa Lima, Sônia Brayner, Antônio Olinto, Adonias Filho, Walmir Ayala, Bandeira de Melo e Ivo Barbieri; \"A crítica modernista\", por Wilson Martins e A. Coutinho. Os seis volumes são vendidos separadamente, mas também podem ser adquiridos no formato de BOX. Juntos, os livros apresentam os ensaios fundamentais para o mais completo estudo da literatura brasileira, sempre com direção de Afrânio Coutinho e codireção de Eduardo Coutinho, e com uma diversidade de abordagens sobre a nossa literatura dos mais eminentes estudiosos brasileiros.",
+            "autores": [
+                "Afrânio Coutinho"
+            ],
+            "assuntos": [
+                "Ficção"
+            ]
+        },
+        {
+            "googleId": "ezZcEQAAQBAJ",
+            "titulo": "História da literatura brasileira",
+            "editora": "Sétimo Selo",
+            "edicao": 2,
+            "anoPublicacao": "2025",
+            "valor": "49.90",
+            "imagemMobileUrl": "https://m.media-amazon.com/images/I/71EicSIX6fL._SY522_.jpg",
+            "imagemDesktopUrl": "https://m.media-amazon.com/images/I/71EicSIX6fL._SL1200_.jpg",
+            "descricao": "História da literatura brasileira é um dos mais abrangentes panoramas das letras brasileiras ao longo dos séculos. Com maestria, Luciana Stegagno Picchio não se limita apenas a traçar, desde a colonização até as expressões contemporâneas, toda a evolução da literatura brasileira, mas também analisa e avalia escritores e movimentos, sem jamais destruir-lhes a personalidade poética. Em autênticos ensaios, sua abordagem destaca aspectos novíssimos e busca sempre compreender, no sentido mais amplo, quanto um outro homem, mesmo distante no tempo e no espaço, confiou às palavras. É uma história estética da literatura em que a divagação teórica e o exibicionismo erudito não tomam o lugar do conhecimento factual (fundado em bibliografia exaustiva e modelar) nem o anacronismo doutrinário da realidade histórica. Graças a uma visão de conjunto raramente encontrada entre nós, História da literatura brasileira é uma obra essencial para a compreensão de nossa cultura.",
+            "autores": [
+                "Luciana Stegagno Picchio"
+            ],
+            "assuntos": [
+                "Ficção"
+            ]
+        },
+        {
+            "googleId": "0b6ZYWrQtnsC",
+            "titulo": "O livro no Brasil",
+            "editora": "EdUSP",
+            "edicao": 1,
+            "anoPublicacao": "2005",
+            "valor": "62.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=0b6ZYWrQtnsC&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=0b6ZYWrQtnsC&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": null,
+            "autores": [
+                "Laurence Hallewell"
+            ],
+            "assuntos": [
+                "Ficção"
+            ]
+        },
+        {
+            "googleId": "nMRlncnnwncC",
+            "titulo": "A literatura brasileira",
+            "editora": "EdUSP",
+            "edicao": 2,
+            "anoPublicacao": "1999",
+            "valor": "61.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=nMRlncnnwncC&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=nMRlncnnwncC&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": null,
+            "autores": [
+                "José Aderaldo Castello"
+            ],
+            "assuntos": [
+                "Ficção"
+            ]
+        },
+        {
+            "googleId": "0C5CBAAAQBAJ",
+            "titulo": "Memórias Póstumas de Brás Cubas",
+            "editora": "e-artnow sro",
+            "edicao": 3,
+            "anoPublicacao": "2013",
+            "valor": "26.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=0C5CBAAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=0C5CBAAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Sobre a obra: Memórias Póstumas de Brás Cubas faz parte da \"trilogia realista\" de Machado de Assis. O romance foi inicialmente escrito como folhetim, de março a dezembro de 1880, na Revista Brasileira e publicado como livro no ano seguinte pela editora Tipografia Nacional. O livro retrata a escravidão, as classes sociais, o cientificismo e o positivismo da época. É notado como uma das obras mais revolucionárias e inovadoras da literatura brasileira. Sobre Machado de Assis: Joaquim Maria Machado de Assis ( 1839 - 1908) foi um escritor brasileiro, considerado o maior nome da cultura nacional. Escreveu em praticamente todos os gêneros literários e é considerado o introdutor do Realismo no Brasil, com a publicação de Memórias Póstumas de Brás Cubas (1881). A crítica moderna chama de trilogia realista os três romances que marcaram um novo estilo na obra de Machado de Assis, Memórias Póstumas de Brás Cubas (1881), Quincas Borba (1891) e Dom Casmurro (1899), e que decisivamente também inovaram a literatura brasileira, introduzindo o Realismo no Brasil e precedendo outros elementos da literatura contemporânea. Hoje Machado de Assis é considerado um dos grandes gênios da história da literatura, ao lado de autores como Dante, Shakespeare e Camões.",
+            "autores": [
+                "Machado De Assis"
+            ],
+            "assuntos": [
+                "Ficção"
+            ]
+        },
+        {
+            "googleId": "_71oEQAAQBAJ",
+            "titulo": "Dom Casmurro",
+            "editora": "Principis",
+            "edicao": 5,
+            "anoPublicacao": "2025",
+            "valor": "22.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=_71oEQAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=_71oEQAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Dom Casmurro, obra-prima de Machado de Assis, apresenta a trajetória de Bento Santiago, um homem marcado por suas memórias da infância na Rua de Matacavalos e pelo amor profundo e tumultuado que sente por Capitu. A narrativa, carregada de nuances psicológicas, mergulha no universo do ciúme e da insegurança, revelando a complexidade emocional do protagonista. Com seu olhar perspicaz, Bento nos conduz por um labirinto de lembranças, onde a dúvida sobre a fidelidade de Capitu, com seus olhos de ressaca, permeia cada página. A ambiguidade da história instiga discussões sobre verdade e interpretação, tornando este romance um dos pilares da literatura brasileira e um convite à reflexão sobre as relações humanas e suas intricadas teias.",
+            "autores": [
+                "Machado de Assis"
+            ],
+            "assuntos": [
+                "Ficção",
+                "Tecnologia"
+            ]
+        },
+        {
+            "googleId": "OgzzEQAAQBAJ",
+            "titulo": "Aprenda programação funcional",
+            "editora": "Alta Books",
+            "edicao": 5,
+            "anoPublicacao": "2025",
+            "valor": "43.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=OgzzEQAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=OgzzEQAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Aprenda a pensar e a escrever códigos como um programador funcional. Com este guia prático, desenvolvedores de softwares familiarizados com a programação orientada a objetos (POO) mergulharão de cabeça nos principais conceitos da programação funcional (PF) e aprenderão a usar recursos funcionais e da POO em projetos de softwares grandes ou complexos. O autor Jack Widman usa amostras de Java, Python, C#, Scala e JavaScript para ajudá-lo a adquirir uma nova perspectiva e um conjunto de ferramentas para lidar com a complexidade do seu domínio de problema. Você aprenderá a escrever códigos mais simples, reutilizáveis, mais fáceis de testar e modificar e consistentemente mais corretos. Este livro também mostra como utilizar padrões da teoria das categorias para ajudá-lo a preencher a lacuna entre a POO e a programação funcional. • Aprenda o básico da programação funcional e explore as maneiras como os programadores funcionais abordam os problemas. • Descubra em que sentidos a programação funcional é diferente da programação orientada a objetos e imperativa. • Utilize um conjunto de padrões de design práticos e aplicáveis que modelam a realidade de maneira funcional. • Aprenda a incorporar recursos da programação funcional e da orientada a objetos em projetos de software. • Aplique padrões de design funcionais de modo apropriado e use-os para escrever códigos corretos, robustos e facilmente modificáveis. \"Este livro ressalta a beleza e a segurança da programação funcional. Ele me esclareceu tópicos que, por um bom tempo, eu não conseguia entender direito e me inspirou a começar a utilizar mais técnicas de programação funcional no meu trabalho profissional.\" —Matthew Campagna, PhD Engenheiro principal sênior, Amazon Web Services",
+            "autores": [
+                "Jack Widman"
+            ],
+            "assuntos": [
+                "Tecnologia"
+            ]
+        },
+        {
+            "googleId": "qJceEQAAQBAJ",
+            "titulo": "Guia Completo - Lógica De Programação",
+            "editora": "Clube de Autores",
+            "edicao": 5,
+            "anoPublicacao": "2024",
+            "valor": "45.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=qJceEQAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=qJceEQAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "O Guia Completo de Lógica de Programação é um recurso abrangente projetado para ajudar tanto iniciantes quanto aqueles com algum conhecimento prévio a dominar os conceitos fundamentais de lógica de programação. O livro oferece uma base sólida para entender como criar soluções estruturadas e eficientes para problemas computacionais, independentemente da linguagem de programação escolhida.",
+            "autores": [
+                "Randi Martins Grude"
+            ],
+            "assuntos": [
+                "Tecnologia"
+            ]
+        },
+        {
+            "googleId": "9oOaAgAAQBAJ",
+            "titulo": "Fundamentos de Programação - 3.ed.",
+            "editora": "AMGH Editora",
+            "edicao": 5,
+            "anoPublicacao": "2008",
+            "valor": "93.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=9oOaAgAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=9oOaAgAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Oferece ferramentas para desenvolver programas eficientes e bem-estruturados, que servem de base para a construção de fundamentos teóricos e práticos de programação. O autor utiliza técnicas de abstração que permitem resolver problemas de programação de modo simples e racional, privilegiando a aprendizagem das regras de sintaxe e solução de problemas. O livro ensina a programar utilizando conceitos fundamentais. Para isso, descreve, com grande quantidade de exemplos e exercícios, as ferramentas de programação mais utilizadas na aprendizagem da computação: diagramas de fluxo e linguagem algorítmica (pseudocódigo).",
+            "autores": [
+                "Luis Joyanes Aguilar"
+            ],
+            "assuntos": [
+                "Tecnologia"
+            ]
+        },
+        {
+            "googleId": "j1CKEAAAQBAJ",
+            "titulo": "Programação Em Java Me Para Celulares",
+            "editora": "Clube de Autores",
+            "edicao": 3,
+            "anoPublicacao": "2014",
+            "valor": "103.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=j1CKEAAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=j1CKEAAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Este livro apresenta de maneira clara e objetiva os passos para que possamos realizar a programação em um dispositivo móvel, no caso um celular em Java. Diversos exemplos práticos e didáticos são apresentados, mostrando os recursos de programação no Java ME para realizar este tipo de aplicativo.",
+            "autores": [
+                "Vitor Amadeu Souza"
+            ],
+            "assuntos": [
+                "Tecnologia"
+            ]
+        },
+        {
+            "googleId": "DUOKEAAAQBAJ",
+            "titulo": "Programação Orientada A Objetos",
+            "editora": "Clube de Autores",
+            "edicao": 5,
+            "anoPublicacao": "2021",
+            "valor": "116.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=DUOKEAAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=DUOKEAAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Livro dedicado a aprendizagem detalhada da Orientação a Objetos. Utilizando a linguagem de programação Java.",
+            "autores": [
+                "Cleilson Henrique De Araujo"
+            ],
+            "assuntos": [
+                "Tecnologia"
+            ]
+        },
+        {
+            "googleId": "G4SaAgAAQBAJ",
+            "titulo": "Programação em C ++ - 2.ed.",
+            "editora": "Bookman Editora",
+            "edicao": 2,
+            "anoPublicacao": "2008",
+            "valor": "73.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=G4SaAgAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=G4SaAgAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Este livro ensina a programar utilizando a poderosa ferramenta C++, além de descrever os paradigmas mais populares no mundo da programação: o procedimental e o orientado a objetos. Elaborado para ser uma referência e um guia de estudo para programação em C++, apresenta as técnicas clássicas e avançadas de programação estruturada, juntamente com técnicas orientadas a objetos. O texto fornece ainda conceitos fundamentais de algoritmos, dados e objetos, com forte ênfase em análise, construção e projeto de programas.",
+            "autores": [
+                "Luis Joyanes Aguilar"
+            ],
+            "assuntos": [
+                "Tecnologia"
+            ]
+        },
+        {
+            "googleId": "olKKEAAAQBAJ",
+            "titulo": "Programação Para Arduino",
+            "editora": "Clube de Autores",
+            "edicao": 5,
+            "anoPublicacao": "2014",
+            "valor": "34.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=olKKEAAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=olKKEAAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Esta literatura é uma continuação da obra Arduino – Prático e Objetivo (2011) do mesmo autor e editora, onde outros exemplos serão explorados de modo que o leitor possa desta forma ter embasamento teórico e prático para desenvolver mais aplicações nesta ferramenta. Neste sentido, nesta obra temas como GPS, PWM, varredura de display e teclado, medição de temperatura, medição de RPM, dentre outros serão abordados. A placa didática utilizada ainda é a Cerne Arduino, onde os recursos para testar os circuitos propostos serão conectados através das conexões disponíveis na lateral do kit.",
+            "autores": [
+                "Vitor Amadeu Souza"
+            ],
+            "assuntos": [
+                "Tecnologia"
+            ]
+        },
+        {
+            "googleId": "gWAWEQAAQBAJ",
+            "titulo": "Programação E Uso De Pilha Em Python",
+            "editora": "Clube de Autores",
+            "edicao": 3,
+            "anoPublicacao": "2024",
+            "valor": "78.90",
+            "imagemMobileUrl": "https://m.media-amazon.com/images/I/51OeAl1szpL._SY522_.jpg",
+            "imagemDesktopUrl": "https://m.media-amazon.com/images/I/51OeAl1szpL._SL1200_.jpg",
+            "descricao": "A proposta desta literatura é implementar e compreender o uso de pilhas (stacks) na programação em Python. Uma pilha é uma estrutura de dados fundamental que segue o princípio LIFO (Last In, First Out), onde o último elemento adicionado é o primeiro a ser removido. O Python, como ferramenta de programação, será utilizado para demonstrar a implementação prática de pilhas, fornecendo exemplos que ilustram como essa estrutura de dados pode ser aplicada em diferentes cenários. Através destes exemplos, será possível entender os conceitos essenciais das pilhas, como suas operações básicas (push e pop) e como elas podem ser utilizadas para resolver problemas de forma eficiente. O código em Python para implementar e manipular pilhas será apresentado, demonstrando a aplicação prática desta estrutura de dados. Diversos tópicos serão abordados, apresentando a programação em Python de maneira prática e acessível, para garantir uma compreensão completa da técnica e sua aplicação em diferentes contextos.",
+            "autores": [
+                "Vitor Amadeu Souza"
+            ],
+            "assuntos": [
+                "Tecnologia"
+            ]
+        },
+        {
+            "googleId": "9FKKEAAAQBAJ",
+            "titulo": "Programação Para Google Android",
+            "editora": "Clube de Autores",
+            "edicao": 5,
+            "anoPublicacao": "2014",
+            "valor": "62.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=9FKKEAAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=9FKKEAAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "A programação para dispositivos móveis vem crescendo a cada dia e deste mercado, boa parte destes dispositivos funcionam com o Android. Este livro foi escrito para o leitor que vai dar o primeiro passo neste mercado, mostrando como programá-lo através do MIT App Inventor. Vários exemplos são apresentados, todos focados na aplicação com emulação direta em um smartphone/tablet, para que o leitor possa programar e ver o aplicativo funcionando on-line. Exemplos como calculadora, conversão de unidades, raízes de equação são alguns dos vários exercícios práticos propostos ao longo do trabalho.",
+            "autores": [
+                "Vitor Amadeu Souza"
+            ],
+            "assuntos": [
+                "Tecnologia"
+            ]
+        },
+        {
+            "googleId": "UM6PMFaZjWMC",
+            "titulo": "La fundación de Brasil",
+            "editora": "Fundacion Biblioteca Ayacuch",
+            "edicao": 3,
+            "anoPublicacao": "1992",
+            "valor": "54.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=UM6PMFaZjWMC&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=UM6PMFaZjWMC&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": null,
+            "autores": [
+                "Carlos de Araújo Moreira Neto",
+                "Gisele Jacon de A. Moreira"
+            ],
+            "assuntos": [
+                "História"
+            ]
+        },
+        {
+            "googleId": "OoO8EhnrOSsC",
+            "titulo": "A independência do Brasil",
+            "editora": "Zahar",
+            "edicao": 3,
+            "anoPublicacao": "2000",
+            "valor": "46.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=OoO8EhnrOSsC&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=OoO8EhnrOSsC&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Grito do Ipiranga, data nacional, heróis. Marcas da Independência, mito de origem do Brasil. Neste livro, sem tentar negar ou ignorar essas e outras representações, a autora recupera os riscos e as apostas políticas, as experiências cotidianas e a construção de uma soberania nacional.",
+            "autores": [
+                "Iara Lis Carvalho Souza"
+            ],
+            "assuntos": [
+                "História"
+            ]
+        },
+        {
+            "googleId": "Jx5964WRb5wC",
+            "titulo": "O Brasil dos imigrantes",
+            "editora": "Zahar",
+            "edicao": 3,
+            "anoPublicacao": "2001",
+            "valor": "109.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=Jx5964WRb5wC&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=Jx5964WRb5wC&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Este livro estuda a relação entre a cultura brasileira e a cultura dos imigrantes que para cá vieram entre o final do século XIX e início do XX, apontando assimilações e transformações sofridas e provocadas por ambas.",
+            "autores": [
+                "Lucia Lippi Oliveira"
+            ],
+            "assuntos": [
+                "História"
+            ]
+        },
+        {
+            "googleId": "0U5yEQAAQBAJ",
+            "titulo": "Africanismos e africanidades no Brasil",
+            "editora": "Editions L'Harmattan",
+            "edicao": 4,
+            "anoPublicacao": "2025",
+            "valor": "47.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=0U5yEQAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=0U5yEQAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "O tráfico transatlantico foi a causa ativa da deportação de vários milhares de cativos africanos oriundos de universos linguísticos e culturais múltiplos e multifacetados, para as Américas, entre o século XVI e XIX. Uma vez nessas novas terras, esses escravos entraram em contato com os povos locais e o universo endogéno que, logo depois, adotaram. O contato entre os homens sendo sempre e também o das suas Culturas respectivas e das línguas em que se expressam, as influências recíprocas se tornaram então inevitáveis e as conseqüências, apreciáveis. Nesta obra, o autor se embrenha num diálogo intercultural e linguístico, tomando como quadro o Brasil, único país lusófono da América. O exercício consiste em observar com um olhar sincrônico a língua e o patrimônio artistico e cultural desse país para identificar certas realidades tangíveis de origem africana e analizar o alcance delas mediante um método que toma apóio na história. Esta obra que compila ao mesmo tempo dados linguísticos, culturais, antropológicos, onomásticos, toponímicos e ontológicos visa contribuir para a informação e a formação das pessoas ansiosas para aprender sobre as temáticas dos africanismos e das africanidades fora do continente africano.",
+            "autores": [
+                "Tougbo Koffi"
+            ],
+            "assuntos": [
+                "História"
+            ]
+        },
+        {
+            "googleId": "exmtOsvSKj4C",
+            "titulo": "Pré-história do Nordeste do Brasil",
+            "editora": "Editora Universitária UFPE",
+            "edicao": 3,
+            "anoPublicacao": "1997",
+            "valor": "90.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=exmtOsvSKj4C&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=exmtOsvSKj4C&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": null,
+            "autores": [
+                "Gabriela Martin"
+            ],
+            "assuntos": [
+                "História"
+            ]
+        },
+        {
+            "googleId": "fs5yAAAAMAAJ",
+            "titulo": "Breve historia contemporánea del Brasil",
+            "editora": "Fondo de Cultura Economica USA",
+            "edicao": 4,
+            "anoPublicacao": "1994",
+            "valor": "19.90",
+            "imagemMobileUrl": "https://m.media-amazon.com/images/I/61NFjgI1aDL._SY522_.jpg",
+            "imagemDesktopUrl": "https://m.media-amazon.com/images/I/61NFjgI1aDL._SL1200_.jpg",
+            "descricao": "La principal preocupaci n del autor es ofrecer un panorama objetivo y actualizado de la historia brasile a a partir de 1889, y sobre todo de 1930, hasta nuestros d as. Contiene valiosas reflexiones sobre los momentos clave de la historia brasile a en materia social, econ mica y cultural.",
+            "autores": [
+                "Francisco Iglésias"
+            ],
+            "assuntos": [
+                "História"
+            ]
+        },
+        {
+            "googleId": "efESAQAAIAAJ",
+            "titulo": "Por fin, Brasil",
+            "editora": "Lumen Press",
+            "edicao": 4,
+            "anoPublicacao": "2003",
+            "valor": "127.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=efESAQAAIAAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=efESAQAAIAAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": null,
+            "autores": [
+                "Anna Tortajada",
+                "Natza Farré"
+            ],
+            "assuntos": [
+                "História",
+                "Ficção"
+            ]
+        },
+        {
+            "googleId": "LywsAAAAYAAJ",
+            "titulo": "Los indios de Brasil",
+            "editora": "Fundacion Mapfre",
+            "edicao": 3,
+            "anoPublicacao": "1993",
+            "valor": "78.90",
+            "imagemMobileUrl": "https://m.media-amazon.com/images/I/71X+2ryNWML._SY522_.jpg",
+            "imagemDesktopUrl": "https://m.media-amazon.com/images/I/71X+2ryNWML._SL1200_.jpg",
+            "descricao": "\"Chronological synthesis of the history of the indigenous peoples of Brazil, beginning with a short chapter on the pre-1500 era. Follows the Tupinambá and others from colonial through modern times. An annotated bibliography follows. The tone of the text is captured in pictures of the smiling and the naked\"--Handbook of Latin American Studies, v. 58.",
+            "autores": [
+                "Roque de Barros Laraia"
+            ],
+            "assuntos": [
+                "História"
+            ]
+        },
+        {
+            "googleId": "DZ9rAAAAMAAJ",
+            "titulo": "Los aborígenes de Venezuela",
+            "editora": "Fundacion la Salle de Cienc E Antropolog",
+            "edicao": 5,
+            "anoPublicacao": "1980",
+            "valor": "100.90",
+            "imagemMobileUrl": "https://m.media-amazon.com/images/I/91xS63V6t1L._SY522_.jpg",
+            "imagemDesktopUrl": "https://m.media-amazon.com/images/I/91xS63V6t1L._SL1200_.jpg",
+            "descricao": null,
+            "autores": [
+                "Walter Coppens",
+                "Bernarda Escalante"
+            ],
+            "assuntos": [
+                "História"
+            ]
+        },
+        {
+            "googleId": "cSF7AAAAMAAJ",
+            "titulo": "South American Handbook 1981",
+            "editora": "International Publications Service",
+            "edicao": 5,
+            "anoPublicacao": "1979",
+            "valor": "62.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=cSF7AAAAMAAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=cSF7AAAAMAAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": null,
+            "autores": [
+                "John Brooks"
+            ],
+            "assuntos": [
+                "História",
+                "Biografias"
+            ]
+        },
+        {
+            "googleId": "k72i9cfw7JsC",
+            "titulo": "La biografia greca",
+            "editora": "Rubbettino Editore",
+            "edicao": 3,
+            "anoPublicacao": "2005",
+            "valor": "31.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=k72i9cfw7JsC&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=k72i9cfw7JsC&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": null,
+            "autores": [
+                "Italo Gallo"
+            ],
+            "assuntos": [
+                "Biografias"
+            ]
+        },
+        {
+            "googleId": "cpu5EQAAQBAJ",
+            "titulo": "Memorias",
+            "editora": "Clube de Autores",
+            "edicao": 3,
+            "anoPublicacao": "2026",
+            "valor": "91.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=cpu5EQAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=cpu5EQAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Em outubro de 2023, surgiu-me a vontade de fazer um relato da minha vida. E conversando com o Irmão maçom Jonas Dias de Sousa, pessoa com grande habilidade de escrita, fui encorajado a fazê-lo, além de contar com os préstimos deste irmão no início da jornada. Seguindo o conselho de Jonas, comecei a falar da minha infância. E foi como abrir uma velha caixa de madeira, daquelas que guardam cartas, fotografias e objetos cheios de significados. De dentro dela saltaram cheiros, vozes, risos e lágrimas. A cada recordação, crescia em mim a vontade de continuar, de não apenas recordar, mas reviver e dividir. Jonas veio à minha casa por duas vezes, me entrevistou e transcreveu as entrevistas que estão diluídas no texto. Foi muito importante sua ajuda para a concretização deste trabalho. Foram estas primeiras entrevistas que me permitiram pensar e ordenar os fatos de minha vida para que fossem transportados para essas páginas. Contudo, escrever sobre nós mesmos pode ser mais difícil e desafiador do que possa parecer, e, somado a isto, há sempre dúvidas sobre quais os relatos de nossa vida possam interessar a quem nos lê.",
+            "autores": [
+                "Donato Alvarenga Rocha"
+            ],
+            "assuntos": [
+                "Biografias"
+            ]
+        },
+        {
+            "googleId": "PorOEQAAQBAJ",
+            "titulo": "Dicionário da memória",
+            "editora": "Sociedade Mineira de Cultura – Editora P",
+            "edicao": 5,
+            "anoPublicacao": "2026",
+            "valor": "66.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=PorOEQAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=PorOEQAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Este Dicionário nasceu do desejo de reunir em um mesmo lugar indicações e provocações explicativas sobre noções e conceitos teóricos que orbitam em torno do tema da memória. Presente em todas as áreas de estudo que se dedicam a compreender a experiência humana a partir da inflexão simbólica, a memória espraia-se de modo generosamente contundente por todas elas, seja como processo, seja como fio narrativo, seja como luz ou como véu. Nossa intenção, os tantos colegas que se engajaram no projeto do Dicionário da Memória, é que este livro apoie e instigue pesquisadores, estudiosos, curiosos e apaixonados pela memória. Este Dicionário não foi pensado assim, mas, felizmente, tornou-se assim. Mais do que um compêndio compilatório de verbetes teóricos oriundos de distintas áreas de conhecimento, firmou-se como uma publicação que, nos parece, atrairá o leitor pela sua riqueza e diversidade de abordagens da memória. A maioria dos verbetes nele listados diz respeito, de modo direto, à vida ordinária ou, quem sabe, extraordinária de cada um e de todos nós. O que só reafirma a decisiva relevância heurística da memória – substância e processo que nos conforma identitariamente, pois é no tempo presente que a memória se articula e se concretiza.",
+            "autores": [
+                "Editora PUC Minas"
+            ],
+            "assuntos": [
+                "Biografias"
+            ]
+        },
+        {
+            "googleId": "8D56NrW_224C",
+            "titulo": "Limites",
+            "editora": "EdUSP",
+            "edicao": 3,
+            "anoPublicacao": "1995",
+            "valor": "22.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=8D56NrW_224C&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=8D56NrW_224C&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": null,
+            "autores": [
+                "Associação Brasileira de Literatura Comp"
+            ],
+            "assuntos": [
+                "Biografias"
+            ]
+        },
+        {
+            "googleId": "7g1BBvBsotUC",
+            "titulo": "Teatro da memória",
+            "editora": "Annablume",
+            "edicao": 3,
+            "anoPublicacao": "2001",
+            "valor": "95.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=7g1BBvBsotUC&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=7g1BBvBsotUC&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": null,
+            "autores": [
+                "Luiz Humberto Martins Arantes"
+            ],
+            "assuntos": [
+                "Biografias"
+            ]
+        },
+        {
+            "googleId": "0AgPAAAAYAAJ",
+            "titulo": "Toward a Discourse of Consent",
+            "editora": "Praeger",
+            "edicao": 4,
+            "anoPublicacao": "2004",
+            "valor": "67.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=0AgPAAAAYAAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=0AgPAAAAYAAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Focuses on the interaction between American authorities, the Popular Democratic Party (PPD), and its multiple supporters that informed colonial politics in Puerto Rico.",
+            "autores": [
+                "Gabriel Villaronga"
+            ],
+            "assuntos": [
+                "Biografias"
+            ]
+        },
+        {
+            "googleId": "DQksAAAAYAAJ",
+            "titulo": "Mulheres, militância e memória",
+            "editora": "Editora FGV",
+            "edicao": 5,
+            "anoPublicacao": "1996",
+            "valor": "40.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=DQksAAAAYAAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=DQksAAAAYAAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": null,
+            "autores": [
+                "Elizabeth Fernandes Xavier Ferreira"
+            ],
+            "assuntos": [
+                "Biografias"
+            ]
+        },
+        {
+            "googleId": "xk0tAAAAYAAJ",
+            "titulo": "Literatura brasileira em foco",
+            "editora": "Eduerj",
+            "edicao": 3,
+            "anoPublicacao": "2003",
+            "valor": "84.90",
+            "imagemMobileUrl": "https://m.media-amazon.com/images/I/81S1FR3aRNL._SY522_.jpg",
+            "imagemDesktopUrl": "https://m.media-amazon.com/images/I/81S1FR3aRNL._SL1200_.jpg",
+            "descricao": null,
+            "autores": [
+                "Fátima Cristina Dias Rocha"
+            ],
+            "assuntos": [
+                "Biografias"
+            ]
+        },
+        {
+            "googleId": "36QzAQAAIAAJ",
+            "titulo": "Teoria da história do Brasil",
+            "editora": "S̃ao Paulo : Companhia Editôra Nacional",
+            "edicao": 2,
+            "anoPublicacao": "1969",
+            "valor": "76.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=36QzAQAAIAAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=36QzAQAAIAAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": null,
+            "autores": [
+                "José Honório Rodrigues"
+            ],
+            "assuntos": [
+                "Biografias"
+            ]
+        },
+        {
+            "googleId": "X_Y_AQAAIAAJ",
+            "titulo": "História, memória, literatura",
+            "editora": "Editora Unicamp",
+            "edicao": 5,
+            "anoPublicacao": "2003",
+            "valor": "58.90",
+            "imagemMobileUrl": "https://m.media-amazon.com/images/I/613NFvdZnmL._SY522_.jpg",
+            "imagemDesktopUrl": "https://m.media-amazon.com/images/I/613NFvdZnmL._SL1200_.jpg",
+            "descricao": null,
+            "autores": [
+                "Márcio Seligmann-Silva"
+            ],
+            "assuntos": [
+                "Biografias"
+            ]
+        },
+        {
+            "googleId": "aP9JEAAAQBAJ",
+            "titulo": "O Mundo Da Qualidade",
+            "editora": "Clube de Autores",
+            "edicao": 1,
+            "anoPublicacao": "2018",
+            "valor": "59.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=aP9JEAAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=aP9JEAAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "PREFÁCIO DA TERCEIRA EDIÇÃO Este compêndio foi desenvolvido ao longo de dezesseis anos de atuação na área de qualidade e abrange uma grande gama de conhecimentos em diversas áreas que norteiam o mundo da qualidade. O objetivo do mesmo é demonstrar a evolução da qualidade como um todo ao redor do mundo e disseminar o conhecimento sobre as várias atividades realizadas nesta que é uma das áreas mais abrangentes do mercado. Este compêndio foi totalmente revisado comparado a 2º edição sendo inserido uma grande gama de novas informações e reduzido o seu número de págimas de 2020 para 538 devido ao novo método de formatação. Ele está estruturado em 13 partes no total em uma forma lógica conforme abaixo: PARTE 1 - HISTÓRIA DA QUALIDADE A arte de se obter Qualidade experimentou uma grande evolução no século XX, partindo da mera inspeção de produtos acabados à visão estratégica de negócios. Esta evolução pode ser analisada conforme seu contexto no Ocidente, no Japão e no mundo como um todo. PARTE II – MESTRES DA QUALIDADE E DA ADMINISTRAÇÃO Existem diversas administradores e colaboradores para o desenvolvimento e evolução da administração e consequentemente da qualidade como um todo. Abordaremos sessenta e quatro nomes desses grandes pensadores e como eles contribuíram para o desenvolvimento da qualidade como um todo no mundo. PARTE 3 – NORMALIZAÇÃO A normalização é o ponto chave para o desenvolvimento da qualidade, sem ela a qualidade realmente não existe, pois com ela são padronizadas as técnicas métodos, ferramentas, diretrizes, regras, formas, padrões de referências e tudo o que tem a ver com a qualidade como um todo. Hoje existem diversas entidades que colaboram para o desenvolvimento da normalização no mundo. Descreveremos mais de 2.000 dessas entidades divididas por suas áreas de atuação. PARTE 4 - AVALIAÇÃO DE CONFORMIDADE Neste capítulo abordaremos mais de 1000 entidades que executam inspeções, ensaios, verificações de desempenho, qualificação e declaração de fornecedores no Brasil. Além de abordarmos as definições e conceitos da norma ISO 17000 (avaliação de conformidade) e a demanda crescente deste método no mercado globalizado. PARTE 5 – BARREIRAS TÉCNICAS AS EXPORTAÇÕES Nos dias de hoje, as barreiras não tarifárias, em especial as barreiras técnicas, assumem grande importância como mecanismo de proteção aos mercados. Essas barreiras atingem as exportações dos países em desenvolvimento, camufladas sob a forma de exigências técnicas que os fabricantes desses países, por sua menor capacitação tecnológica, têm maior dificuldade de cumprir. A superação de barreiras técnicas é um desafio para todos, principalmente para as micro e pequenas empresas (MPE) dos países em desenvolvimento. PARTE 6 - SISTEMAS DE GESTÃO, REQUISITOS E SELOS Os sistemas de gestão, requisitos e selos são os conceitos mais conhecidos no mundo de padrões de qualidade mundial tais como a ISO 9001 e ISO 14001, porém cada tipo de setor de produção e ou serviço tem uma especificação diferente. Abordaremos mais de 450 especificações divididas em mais de 70 áreas de atuação para uma abordagem completa dos requisitos de sistemas e qualidade aplicáveis em todo o mundo. PARTE 7 – ROTULAGEM AMBIENTAL A rotulagem ambiental veio para ficar, devido a sua grande aceitação no mercado e grande expansão de alguns selos que já se tornaram quase que obrigatórios para a aceitação da marca do produto no mercado a demanda está crescente com relação a esse tipo de serviço ou produto. Porém somente uma pequena parcela dos mais de 400 selos são conhecidos pelos consumidores e até mesmo os produtores. Devido a estes motivos reunimos nesta parte do compêndio todos os principais itens para o desenvolvimento de um rótulo ambiental e fornecemos uma lista detalhada de cada rótulo existente no globo. PARTE 8 - ORGANISMOS DE ACREDITAÇÃO MUNDIAL E CERTIFICADORAS NO BRASIL A acreditação de organismos de certificação é realizada para reconhecer a competência técnica dos organismos de avaliação da conformidade que executam certificações de produtos, sistemas de gestão, pessoas, processos ou serviços, para isto, utiliza programas de acreditação estabelecido em normas, cujos requisitos devem ser atendidos plenamente pelos solicitantes. Esta acreditação engloba as modalidades: sistemas de gestão, produtos e pessoas. Neste capítulo abordaremos como se desenvolve essa acreditação, os mais de 60 órgãos que desenvolvem essa avaliação no mundo e as mais de 80 certificadoras presentes no Brasil. PARTE 9 – QUALIDADE NOS SERVIÇOS As mudanças e o crescimento experimentado por vários setores têm evidenciado a importância das empresas dedicarem maior atenção à qualidade com que seus serviços são prestados, sempre objetivando atender e superar as expectativas dos clientes. Destaca-se que esta atenção deve estar presente nos serviços prestados externamente, mas também nos prestados internamente aos próprios funcionários das empresas, ou seja, na relação cliente fornecedor interno. Porém poucos conhecem e adotam os princípios de qualidade nos serviços. Neste capítulo abordaremos os princípios de qualidade no serviço e os sete sistemas existentes para uma abordagem de serviço eficiente e eficaz. PARTE 10 – RESPONSABILIDADE SOCIAL A questão da responsabilidade social tem sido tema recorrente no mundo dos negócios. Há uma crescente preocupação por parte das empresas em compreender seu conceito e dimensões e incorporá-los à sua realidade. Porém a grande abrangência do tema torna muitas vezes o desenvolvimento e implantação confusos e limitados. Para um esclarecimento total do mundo da responsabilidade social abordaremos as principais inciativas no mundo, os princípios e diretrizes internacionais e setoriais, os princípios de governança corporativa e as ferramentas de gestão. PARTE 11 – METROLOGIA Não temos como falar de qualidade sem falarmos de coleta de dados, de precisão na medição, de informações corretas, de calibração, ajuste e correção. Porém como é desenvolvido da cadeia metrológica? A necessidade do conhecimento deste tema é de grande importância tão qual os conceitos de qualidade abordados no dia a dia, devido aos dois (qualidade e metrologia), andarem juntos diariamente nos nossos dias. PARTE 12 - FERRAMENTAS E MÉTODOS DA QUALIDADE Devido a grande abrangência da qualidade e seus diversos métodos e ferramentas, muitos ainda desconhecidos e outras tão popularizados, abordaremos 262 métodos e ferramentas para a utilização em diversas áreas de gestão da qualidade. PARTE 13 – FRASES MOTIVACIONAIS E DE QUALIDADE Mais de 600 frases motivacionais e de qualidade são reunidas nesse capítulo para a reflexão, desenvolvimento, automotivação, motivação empresarial e desenvolvimento profissional para a colaboração do crescimento organizacional e ou pessoal, criando assim o crescimento sustentável. Vale ressaltar que os temas, normas, requisitos, padrões e sistemas não se limitam aos aqui apresentados, porém a maior parte dos mesmos estão sendo desenvolvidos. Devido à grande abrangência da área da qualidade é inviável um estudo global de todos os requisitos, pois cada município, cidade, estado, pais, região e continente tem um requisito diferente para cada área, trabalho, sistema de gestão e etc., a abrangência das normas é finitamente extensa e exaustiva. Apesar de parecer completo este compêndio é somente a ponta do iceberg de algo muito maior “O MUNDO DA QUALIDADE”, com infinitas possiblidades, padrões e sistemas. Porém sem sobra de dúvida é o trabalho mais completo já feito na área de qualidade. Este compêndio é adequado tanto para conhecimentos próprios pessoais e ou profissionais quanto para cursos de licenciatura, pós-graduação, MBA, mestrado e ou doutorado. Devido à grande necessidade de melhoria e atualização, este compêndio será atualizado a cada 5 anos para adequação as necessidade e mudanças desta área que é uma das mais abrangentes do mercado. As maioreias das tabelas contidas neste manual foram direcionadas com links para melhor visualização e atualização deste compêndio tornando o mesmo mais dinâmico e um documento vivo permanente. Espero que com a leitura desde compêndio seja vislumbrado um novo conceito de qualidade saindo do chão de fábrica, produtos fornecidos e normas vastamente disseminadas ISO, para o nosso dia a dia, pois sem a qualidade não existiria os avanços tecnológicos e o mercado globalizado que hoje vivemos.",
+            "autores": [
+                "Tiago Costa"
+            ],
+            "assuntos": [
+                "Negócios"
+            ]
+        },
+        {
+            "googleId": "uIReFI6gzugC",
+            "titulo": "Logística: Conceitos e Tendências",
+            "editora": "Centro Atlantico",
+            "edicao": 2,
+            "anoPublicacao": "2006",
+            "valor": "77.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=uIReFI6gzugC&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=uIReFI6gzugC&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Abordando os mais importantes conceitos e tendências da Logística, de uma forma simples mas rigorosa, este livro apresenta algumas das mais importantes correntes do pensamento logístico. Para isso, o autor, com uma vasta experiência no âmbito da Logística Interna, referencia autores e entidades que ajudarão todos os que pretendam conhecer mais sobre esta fascinante área do conhecimento. Sendo crescente a competitividade e a complexidade da gestão das organizações, são exigidas aos seus gestores competências muito alargadas e uma visão clara sobre o contexto em que desempenham a sua actividade. Por isso, além de uma abordagem global dos aspectos essenciais da Logística, no contexto da gestão das organizações e da economia global, optou-se por desenvolver temas que são cruciais em qualquer organização, desde o Serviço ao Cliente, os Custos Logísticos e a Terceirização (Operadores Logísticos). A crescente importância da Logística Inversa, dos pontos de vista económico, financeiro e ambiental, justificam o tratamento que lhe foi dado. Sendo as tecnologias de informação e da comunicação essenciais, no âmbito da gestão das organizações e da vida quotidiana, faz-se um estudo sobre as principais, com realce para os desenvolvimentos mais recentes, por exemplo, o Código Electrónico de Produto (sucessor do código de barras) e do GPS, ambos com ampla aplicação na Logística. Por todos esses motivos, este livro será do interesse especial de quem já intervém ou pretenda enveredar profissionalmente pela Logística ou áreas afins, bem como dos estudantes.",
+            "autores": [
+                "Benjamim Moura"
+            ],
+            "assuntos": [
+                "Negócios"
+            ]
+        },
+        {
+            "googleId": "kcZQDwAAQBAJ",
+            "titulo": "Gestão do Amanhã",
+            "editora": "Editora Gente Liv e Edit Ltd",
+            "edicao": 3,
+            "anoPublicacao": "2018",
+            "valor": "63.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=kcZQDwAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=kcZQDwAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Não existe outro momento mais vibrante na história recente da humanidade. Um ambiente repleto de desafios reserva oportunidades até então não mapeadas. O mundo está em aberto. A vida está em aberto. O que fez empresas como Netflix, Airbnb e Uber assumirem o lugar de companhias e modelos de negócios aparentemente consagrados e indestrutíveis? O que nos reserva o futuro? Embora muito se tenha falado sobre esses novos players do mercado, ainda há inúmeras dúvidas sobre como será o futuro do mundo corporativo, com seus diversos modelos de empresas e negócios, muitos dos quais ainda se consideram inabaláveis. O fato, porém, é que, diariamente, o mundo passa por mudanças em todas as áreas. Hoje coabitam, no mesmo momento, o novo – representado pelas novas tecnologias, inovações e rupturas – com o clássico, o tradicional, forjado ao longo de séculos de convivência e desenvolvimento humano. Essa nova Era é conhecida como a 4a Revolução Industrial, a mais abrangente, profunda e ampla da história. É a única que harmoniza descobertas transformadoras integrando, pela primeira vez, o mundo físico, digital e biológico em um mesmo ambiente. Com essas mudanças, o modelo de gestão também precisa mudar: os modelos corporativos, os líderes, os mecanismos de educação etc. Sandro Magaldi e José Salibi Neto trazem nesta obra um panorama completo dos modelos de gestão ao decorrer da história e qual deve ser o modelo nesse novo momento no qual estamos vivendo. Em um texto abrangente e ao mesmo tempo simples, eles apresentam tudo o que você precisa saber para não ser derrubado por não se adaptar ao novo.",
+            "autores": [
+                "Sandro Magaldi",
+                "José Salibi Neto"
+            ],
+            "assuntos": [
+                "Negócios"
+            ]
+        },
+        {
+            "googleId": "WocoCvWfSmMC",
+            "titulo": "CRM offline & online",
+            "editora": "ISPGAYA",
+            "edicao": 2,
+            "anoPublicacao": "2006",
+            "valor": "122.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=WocoCvWfSmMC&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=WocoCvWfSmMC&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": null,
+            "autores": [
+                "José Duarte Santos"
+            ],
+            "assuntos": [
+                "Negócios"
+            ]
+        },
+        {
+            "googleId": "fungEAAAQBAJ",
+            "titulo": "Uma Viagem Lean",
+            "editora": "Clube de Autores",
+            "edicao": 1,
+            "anoPublicacao": "2023",
+            "valor": "104.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=fungEAAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=fungEAAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Em Uma viagem Lean , o autor Oydil Figueiredo convida os leitores a explorarem o fascinante mundo da Metodologia Enxuta de uma forma única e envolvente. Com décadas de experiência prática em indústrias ao redor do mundo e uma sólida base acadêmica, Oydil oferece uma perspectiva rica e autêntica sobre o Lean. Através de uma narrativa envolvente que entrelaça histórias reais e fictícias, este livro oferece uma visão surpreendente e imprevisível da jornada Lean. Ao conduzir os leitores pelas desafiadoras paisagens da travessia da Serra Fina, uma das mais difíceis do Brasil, o autor revela os princípios técnicos fundamentais que sustentam essa metodologia Oydil Figueiredo adota uma abordagem minimalista que ecoa os princípios do Lean, buscando simplificar as operações e eliminar desperdícios tanto na vida quanto no trabalho. A filosofia Lean, centrada na criação de valor para o cliente, envolvimento dos funcionários e melhoria contínua, é aplicada de forma prática e inspiradora ao longo do livro.",
+            "autores": [
+                "Oydil Cesar De Figueiredo"
+            ],
+            "assuntos": [
+                "Negócios",
+                "Tecnologia"
+            ]
+        },
+        {
+            "googleId": "jKfNEQAAQBAJ",
+            "titulo": "A Espinha Dorsal Da Saúde",
+            "editora": "Clube de Autores",
+            "edicao": 5,
+            "anoPublicacao": "2026",
+            "valor": "19.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=jKfNEQAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=jKfNEQAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "A saúde é um dos pilares fundamentais da sociedade. Por trás de cada atendimento, decisão clínica e experiência do paciente existe uma estrutura muitas vezes invisível que sustenta todo o sistema: a gestão hospitalar. Em A Espinha Dorsal da Saúde, o leitor é conduzido por uma jornada completa pelo universo da gestão hospitalar estratégica. A obra explora desde suas origens históricas até os desafios contemporâneos e as tendências que moldam o futuro das instituições de saúde. Ao longo dos capítulos, são apresentados conceitos essenciais de planejamento, qualidade assistencial, gestão financeira, liderança de equipes, inovação tecnológica, segurança do paciente e a relação entre hospitais e políticas públicas. Mais do que um manual técnico, este livro mostra que gerir saúde é, acima de tudo, um compromisso humano. Ao integrar conhecimento científico, experiências práticas e reflexões críticas, os autores demonstram como decisões administrativas impactam diretamente pacientes, profissionais e comunidades inteiras. Com uma abordagem clara e reflexiva, a obra revela que a excelência na gestão hospitalar nasce do equilíbrio entre eficiência, inovação e empatia, formando líderes capazes de transformar desafios em oportunidades e instituições em ambientes mais humanos, seguros e sustentáveis. Destinado a estudantes, gestores e profissionais da saúde, bem como a todos que desejam compreender os bastidores que sustentam o cuidado, este livro é um convite à reflexão e à ação. Afina",
+            "autores": [
+                "Cícero Cardozo, Victor Miguel, Ana Maria"
+            ],
+            "assuntos": [
+                "Negócios"
+            ]
+        },
+        {
+            "googleId": "VhmKEAAAQBAJ",
+            "titulo": "História De Uma Linda Região Do “brasil”",
+            "editora": "Clube de Autores",
+            "edicao": 5,
+            "anoPublicacao": "2021",
+            "valor": "104.90",
+            "imagemMobileUrl": "https://m.media-amazon.com/images/I/51KqcliI1EL._SY522_.jpg",
+            "imagemDesktopUrl": "https://m.media-amazon.com/images/I/51KqcliI1EL._SL1200_.jpg",
+            "descricao": "A maior felicidade humana é ter o prazer de morar e compartilhar com as delicias de um Município chamado CIANORTE, pertencente ao Estado do PARANÁ compondo o Território do BRASIL. CIANORTE palavra hospitaleira que podemos identificar cada letra como sendo as delicias de poder fazer parte deste valioso município e assim identificar como sendo um município: CCordial, afetuoso, sincero, fortificante. I Ideal, em que há toda perfeição. A Amoroso, carinhoso, meigo. NNatural, preservado em relação à natureza. OOrganizado, ordenar, adaptar às condições. RRomântico, relativo ao romance. TTernura, afeto brando e carinhoso. EEmpreendedor, ativo, em busca de vitória. Para completar a valorização de CIANORTE é só interpretar que o Município é a força de nossa nação, pois é deste solo que falamos orgulhosamente CAPITAL DO VESTUÁRIO, não só julgando essa prosperidade, mas como muitas outras empresas próspera para o crescimento de cada ser humano hoje residente neste valioso município. O Livro História de Cianorte trabalha a importância do todo de um município promissor para a Região, Estado do Paraná e Brasil. E ainda constam nesse livros mensagens e fotos desses municípios, não deixe de ler esse elevado livro na história brasileira. CIDADE JAPURÁ – PARANÁ SÃO TOMÉ – PARANÁ DISTRITO APARECIDA DO OESTE – DISTRITO DE TUNEIRA DO OESTE CIDADE PEABIRU – PARANÁ CIDADE JUSSARA – PARANÁ CIDADE ARARUNA – PARANÁ CIDADE TUNEIRAS DO OESTE – PARANÁ CIDADE TAPEJARA – PARANÁ TERRA BOA – PARANÁ CIDADE INDIANÓPOLIS – PARANÁ CIDADE SÃO MANOEL DO PARANÁ – PARANÁ CIDADE RONDON – PARANÁ CIDADE GUAPOREMA – PARANÁ CIDADE GAÚCHA – PARANÁ CIDADE MARINGÁ – PARANÁ CIDADE CURITIBA - PARANÁ CIDADE BRASÍLIA – DISTRITO FEDERAL - BRASIL",
+            "autores": [
+                "Wagner Luiz Marques"
+            ],
+            "assuntos": [
+                "Negócios"
+            ]
+        },
+        {
+            "googleId": "HVwWEQAAQBAJ",
+            "titulo": "Finanças Empresariais",
+            "editora": "Clube de Autores",
+            "edicao": 2,
+            "anoPublicacao": "2024",
+            "valor": "129.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=HVwWEQAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=HVwWEQAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Este livro é uma fonte abrangente e prática destinada a estudantes, gestores, empreendedores e profissionais que desejam aprofundar seus conhecimentos em finanças empresariais e aplicá-los de forma eficaz para garantir a sustentabilidade e o crescimento de suas organizações. A obra começa com uma introdução aos conceitos fundamentais de finanças empresariais, discutindo sua importância e os princípios que norteiam a gestão financeira. Explora-se detalhadamente os objetivos da gestão financeira e as funções cruciais do gestor financeiro, incluindo decisões de investimento, financiamento e distribuição de lucros. A análise financeira é abordada com profundidade, cobrindo balanço patrimonial, demonstração de resultados (DRE) e demonstração de fluxo de caixa (DFC). Técnicas de análise vertical e horizontal, bem como a análise de índices financeiros, são apresentadas para proporcionar uma compreensão completa da saúde financeira de uma empresa, enriquecida por estudos de caso reais. O planejamento financeiro é destacado, com foco em seu processo e na gestão eficiente do capital de giro. O livro discute a elaboração e controle de orçamentos, incluindo técnicas de projeção e estimativas, e apresenta o conceito e a implementação do Orçamento Base Zero (OBZ). No campo dos investimentos, são explorados diferentes tipos de investimentos e critérios de avaliação, como Valor Presente Líquido (VPL), Taxa Interna de Retorno (TIR) e Payback. A análise de riscos e as técnicas de mitigação são cobertas, enfatizando a importância de avaliar o retorno ajustado ao risco. As fontes de financiamento, tanto internas quanto externas, e as estratégias de gestão do endividamento são discutidas, junto com teorias da estrutura de capital e os fatores que influenciam essas escolhas. O livro também aborda métodos de avaliação de empresas, incluindo avaliação por múltiplos de mercado, fluxo de caixa descontado (DCF) e valor de ativos, além de comparações setoriais e benchmarking financeiro. Por fim, a obra trata da estrutura e funções do conselho de administração, boas práticas de governança e a importância da ética nos negócios, fornecendo um quadro completo de como a governança impacta a gestão financeira e o sucesso da empresa. Com uma abordagem clara e prática, este livro é um guia essencial para quem busca tomar decisões financeiras informadas e estratégicas, contribuindo significativamente para o sucesso de suas empresas.",
+            "autores": [
+                "Fransueny Dos Santos Almeida Fonseca"
+            ],
+            "assuntos": [
+                "Negócios"
+            ]
+        },
+        {
+            "googleId": "3knGEAAAQBAJ",
+            "titulo": "Construindo Uma Empresa De Sucesso",
+            "editora": "Clube de Autores",
+            "edicao": 3,
+            "anoPublicacao": "2023",
+            "valor": "43.90",
+            "imagemMobileUrl": "https://m.media-amazon.com/images/I/61oCMdNd6hL._SY522_.jpg",
+            "imagemDesktopUrl": "https://m.media-amazon.com/images/I/61oCMdNd6hL._SL1200_.jpg",
+            "descricao": "No livro Construindo uma Empresa de Sucesso: Estratégias e Práticas da Gestão Empresarial , você encontrará um guia completo para alcançar o sucesso empresarial. Escrito por um grande especialista em alavancagem empresarial, este livro oferece insights valiosos e práticas comprovadas para ajudá-lo a construir uma empresa sólida e lucrativa. A obra abrange uma ampla gama de essenciais da gestão empresarial, desde o estabelecimento de metas estratégicas e o desenvolvimento de uma visão clara, até a criação de uma cultura organizacional de excelência. Você aprenderá como identificar oportunidades de mercado, diferenciar-se da concorrência e acompanhar o crescimento sustentável. Com foco na gestão financeira eficiente, você descobrirá como tomar decisões controladas e gerenciar os recursos de forma estratégica. Além disso, o livro explora a otimização das operações, a construção de uma marca forte e a implementação de estratégias eficazes para atrair e reter clientes. Você aprenderá a usar dados e análises para embasar suas decisões e se adaptar rapidamente às mudanças do mercado. Construindo uma Empresa de Sucesso é uma leitura indispensável para empreendedores, gestores e aspirantes a líderes que desejam alcançar o sucesso nos negócios. Com este livro em mãos, você terá acesso a estratégias experimentais e comprovadas, especializadas e as ferramentas necessárias para construir uma empresa de sucesso.",
+            "autores": [
+                "Jhonatan Antonelli"
+            ],
+            "assuntos": [
+                "Negócios"
+            ]
+        },
+        {
+            "googleId": "Zof0yzCU074C",
+            "titulo": "Literatura juvenil",
+            "editora": "Editora Melhoramentos",
+            "edicao": 5,
+            "anoPublicacao": "2012",
+            "valor": "85.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=Zof0yzCU074C&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=Zof0yzCU074C&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Há muito se discute a relação do adolescente com o ato de ler, enfatizando sua dificuldade de apreciação da leitura, sobretudo quando se trata de leitura literária. Além disso, as questões associadas ao seu comportamento ocupam cada vez mais espaço na mídia e há um visível crescimento da produção literária para essa faixa etária. Os profissionais de educação vivem às voltas com a difícil tarefa de escolher livros que preparem o jovem para adentrar o universo dos textos — que o acompanharão por toda a vida ou serão cobrados em exames de seleção para o ensino superior —, que o motivem e que tenham uma temática adequada à juventude. Literatura juvenil: Adolescência, cultura e formação de leitores se propõe a lançar um olhar às atuais práticas de leitura e às publicações literárias voltadas aos jovens, além de iniciar um debate sobre o que é ser adolescente hoje, definir o que é um bom livro juvenil e, ainda, trazer sugestões de atividades e leituras complementares.",
+            "autores": [
+                "José Nicolau Gregorin Filho"
+            ],
+            "assuntos": [
+                "Infantil"
+            ]
+        },
+        {
+            "googleId": "2e7dAAAAQBAJ",
+            "titulo": "Desenho na educação infantil",
+            "editora": "Editora Melhoramentos",
+            "edicao": 2,
+            "anoPublicacao": "2013",
+            "valor": "70.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=2e7dAAAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=2e7dAAAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "A coleção Como eu ensino, organizada por Maria José Nóbrega e Ricardo Prado, busca aproximar do trabalho em sala de aula as pesquisas mais recentes sobre temas que interessam à educação básica. Os autores, especialistas na área, apresentam sugestões de como o assunto pode ser tratado, descrevendo as condições didáticas necessárias para uma aprendizagem significativa. Neste volume da coleção, Rosa Iavelberg oferece ao leitor categorias que lançam luz sobre o desenho da criança até os 6 anos de idade, permitindo vê-lo como produção a ser analisada de forma séria. Apresenta ainda uma série de orientações didáticas sem perder de vista que os pequenos jogam e se projetam enquanto desenham.",
+            "autores": [
+                "Rosa Iavelberg"
+            ],
+            "assuntos": [
+                "Infantil"
+            ]
+        },
+        {
+            "googleId": "68KMf5P70YUC",
+            "titulo": "História das cidades brasileiras",
+            "editora": "Editora Melhoramentos",
+            "edicao": 4,
+            "anoPublicacao": "2012",
+            "valor": "43.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=68KMf5P70YUC&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=68KMf5P70YUC&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "A coleção Como eu ensino, organizada por Maria José Nóbrega e Ricardo Prado, busca aproximar do trabalho em sala de aula as pesquisas mais recentes sobre temas que interessam à educação básica. Os autores, especialistas na área, apresentam sugestões de como o assunto pode ser tratado, descrevendo as condições didáticas necessárias para uma aprendizagem significativa. Neste volume da coleção, Antonia Terra mostra como o ensino de História pode adotar um eixo temático — neste caso, o estudo das cidades brasileiras —, para realizar uma aprendizagem mais contextualizada e original, apresentando diversas formas de compreender a nossa história a partir dos espaços urbanos.",
+            "autores": [
+                "Antonia Terra"
+            ],
+            "assuntos": [
+                "Infantil"
+            ]
+        },
+        {
+            "googleId": "de7dAAAAQBAJ",
+            "titulo": "Números naturais e operações",
+            "editora": "Editora Melhoramentos",
+            "edicao": 1,
+            "anoPublicacao": "2013",
+            "valor": "83.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=de7dAAAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=de7dAAAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "A coleção Como eu ensino, organizada por Maria José Nóbrega e Ricardo Prado, busca aproximar do trabalho em sala de aula as pesquisas mais recentes sobre temas que interessam à educação básica. Os autores, especialistas na área, apresentam sugestões de como o assunto pode ser tratado, descrevendo as condições didáticas necessárias para uma aprendizagem significativa. Neste volume da coleção, Célia Maria Carolino Pires apresenta diretrizes para o ensino dos números naturais e das quatro operações básicas nos anos iniciais do Ensino Fundamental. Sustenta suas propostas em uma retrospectiva histórica da construção desses conceitos e procedimentos, bem como da análise das principais tendências metodológicas.",
+            "autores": [
+                "Célia Maria Carolino Pires"
+            ],
+            "assuntos": [
+                "Infantil"
+            ]
+        },
+        {
+            "googleId": "Vk83BhmSwjwC",
+            "titulo": "Texto e gramática",
+            "editora": "Editora Melhoramentos",
+            "edicao": 4,
+            "anoPublicacao": "2012",
+            "valor": "26.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=Vk83BhmSwjwC&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=Vk83BhmSwjwC&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "A coleção Como eu ensino, organizada por Maria José Nóbrega e Ricardo Prado, busca aproximar do trabalho em sala de aula as pesquisas mais recentes sobre temas que interessam à educação básica. Os autores, especialistas na área, apresentam sugestões de como o assunto pode ser tratado, descrevendo as condições didáticas necessárias para uma aprendizagem significativa. Neste volume da coleção, Antônio Suárez Abreu promove um ensino funcional da gramática que permite ao usuário da língua tomar consciência das operações que realiza ao compreender ou produzir textos orais ou escritos.",
+            "autores": [
+                "Antônio Suárez Abreu"
+            ],
+            "assuntos": [
+                "Infantil"
+            ]
+        },
+        {
+            "googleId": "5ezdAAAAQBAJ",
+            "titulo": "A escravidão no Brasil",
+            "editora": "Editora Melhoramentos",
+            "edicao": 2,
+            "anoPublicacao": "2013",
+            "valor": "30.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=5ezdAAAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=5ezdAAAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "A coleção Como eu ensino, organizada por Maria José Nóbrega e Ricardo Prado, busca aproximar do trabalho em sala de aula as pesquisas mais recentes sobre temas que interessam à educação básica. Os autores, especialistas na área, apresentam sugestões de como o assunto pode ser tratado, descrevendo as condições didáticas necessárias para uma aprendizagem significativa. Neste volume da coleção, o escritor e historiador Joel Rufino dos Santos aborda a escravidão no Brasil como um capítulo da história do trabalho no país. A partir de notícias de jornal e relatos da época do trabalho servil, o autor busca que o leitor crie para si \"uma ideia de escravidão\", para refletir sobre os efeitos perversos do modelo econômico escravista ainda presentes em diversos aspectos da sociedade brasileira contemporânea.",
+            "autores": [
+                "Joel Rufino dos Santos"
+            ],
+            "assuntos": [
+                "Infantil"
+            ]
+        },
+        {
+            "googleId": "Qn2wlQszxVwC",
+            "titulo": "Sistema de escrita alfabética",
+            "editora": "Editora Melhoramentos",
+            "edicao": 5,
+            "anoPublicacao": "2012",
+            "valor": "21.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=Qn2wlQszxVwC&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=Qn2wlQszxVwC&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "A coleção Como eu ensino, organizada por Maria José Nóbrega e Ricardo Prado, busca aproximar do trabalho em sala de aula as pesquisas mais recentes sobre temas que interessam à educação básica. Os autores, especialistas na área, apresentam sugestões de como o assunto pode ser tratado, descrevendo as condições didáticas necessárias para uma aprendizagem significativa. Neste volume da coleção, Artur Gomes de Morais identifica as especificidades e inter-relações dos processos de alfabetização e letramento, propondo o ensino sistemático da notação alfabética aliado à vivência cotidiana de práticas de leitura e escrita.",
+            "autores": [
+                "Artur Gomes de Morais"
+            ],
+            "assuntos": [
+                "Infantil"
+            ]
+        },
+        {
+            "googleId": "afDdAAAAQBAJ",
+            "titulo": "Biomas brasileiros",
+            "editora": "Editora Melhoramentos",
+            "edicao": 3,
+            "anoPublicacao": "2013",
+            "valor": "60.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=afDdAAAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=afDdAAAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "A coleção Como eu ensino, organizada por Maria José Nóbrega e Ricardo Prado, busca aproximar do trabalho em sala de aula as pesquisas mais recentes sobre temas que interessam à educação básica. Os autores, especialistas na área, apresentam sugestões de como o assunto pode ser tratado, descrevendo as condições didáticas necessárias para uma aprendizagem significativa. Neste volume da coleção, os biólogos Eloci Peres Rios e Miguel Thompson partem da caracterização dos biomas brasileiros e do estudo da ação humana nesses ambientes para sugerir a melhor abordagem nos anos finais do Ensino Fundamental. Entre as atividades pedagógicas propostas pelos autores estão a criação de um terrário, a ser construído e observado pela turma, e um criativo jogo da sobrevivência das espécies.",
+            "autores": [
+                "Eloci Peres Rios",
+                "Miguel Thompson"
+            ],
+            "assuntos": [
+                "Infantil"
+            ]
+        },
+        {
+            "googleId": "mpedDwAAQBAJ",
+            "titulo": "O Livro Infantil de Conto de Fadas",
+            "editora": "Babelcube Inc.",
+            "edicao": 2,
+            "anoPublicacao": "2019",
+            "valor": "96.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=mpedDwAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=mpedDwAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "O Livro Infantil de Conto de Fadas - Como Criar Crianças Inteligentes é um livro de histórias que tenta ajudar os pais, quando a sua relação com os seus filhos se torna mais intimidante: a hora de dormir. A vida agitada de hoje em dia, leva-nos a negligenciar os aspetos vitais e fundamentais da educação e crescimento. As crianças, mesmo as mais novas, são muitas vezes deixadas em frente à televisão e, apenas após elas adormecerem, são levadas para a cama. Mas é a sua curiosidade que estimula a sua inteligência. Televisão, rádio e videojogos apenas têm uma função passiva. Eles não podem responder às suas questões. As crianças precisam de fazer perguntas, de saber o significado das palavras que elas não sabem, de elaborar uma história juntas com um adulto, que as acalma e as faz refletirem sobre a vida. Os pequenos adormecem apenas graças ao som relaxante de uma voz familiar, que lê para eles, sem que seja necessário seguir ou compreender a história no seu todo. Precisamente por esta razão, histórias para dormir tornam-se um momento mais apreciado para eles, que as procuram todas as noites. Irás dar-te conta que eles vão querer ouvir, com frequência, o mesmo conto de fadas, na sua forma habitual, apanhando sempre diferentes significados. Este livro está estruturado em dois níveis, para que também possa atender as necessidades das crianças mais velhas. Para ativar a sua imaginação, nos prefácios, a história é contada sobre as personagens do conto de fadas, que leem as suas histórias contidas neste livro. O conselho que eu daria aos pais de crianças mais novas, é saltar os prefácios e ler diretamente os contos de fadas.No livro são usadas, por vezes, palavras incomuns e complexas. Elas servem para promover a aquisição de linguagem, explorando a curiosidade natural que as crianças têm, nas suas fases de crescimento. Ao contrário dos adultos, de facto, eles conseguem memorizar imediatamente uma palavra, apenas",
+            "autores": [
+                "Ann Sepolveda",
+                "Alessandro Antonacci"
+            ],
+            "assuntos": [
+                "Infantil"
+            ]
+        },
+        {
+            "googleId": "cQFyDwAAQBAJ",
+            "titulo": "Oficina De Contação De Histórias",
+            "editora": "Clube de Autores",
+            "edicao": 1,
+            "anoPublicacao": "2015",
+            "valor": "58.90",
+            "imagemMobileUrl": "https://books.google.com/books/content?id=cQFyDwAAQBAJ&printsec=frontcover&img=1&zoom=2&source=gbs_api",
+            "imagemDesktopUrl": "https://books.google.com/books/content?id=cQFyDwAAQBAJ&printsec=frontcover&img=1&zoom=4&source=gbs_api",
+            "descricao": "Neste livro, décimo quarto publicado, apresento meus estudos acadêmicos e minha experiência como contador de histórias profissional. Pretendo com ele apresentar meu método de anamnese cuja repercussão psicossomática é preponderante para que a imaginação ganhe força volitiva e assim animicamente capacitando o profissional, que pode ser um pedagogo, psicologo, professor, e, demais interessados. A ilustração da capa é uma obra de Santore Charles e tem o título de:_Snow_White.",
+            "autores": [
+                "Leonardo Daniel"
+            ],
+            "assuntos": [
+                "Infantil"
+            ]
+        }
+    ]
+}

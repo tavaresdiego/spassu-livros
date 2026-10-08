@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ assunto.descricao }}{% endblock %}
+{% block meta_description %}Livros de {{ assunto.descricao }} no catálogo Spassu Livros.{% endblock %}
+
+{% block breadcrumb %}
+    <twig:Ui:Breadcrumb :items="[{label: 'Início', href: path('app_home')}, {label: assunto.descricao}]" />
+{% endblock %}
+
+{% block body %}
+    <twig:Layout:PageHeader :title="assunto.descricao" :subtitle="page.total ~ (page.total == 1 ? ' livro' : ' livros')" />
+
+    {% if page.items is empty %}
+        <twig:Ui:EmptyState title="Nenhum livro neste assunto">
+            <twig:Ui:Button :href="path('app_home')" variant="outline-primary" icon="arrow-left">Voltar ao início</twig:Ui:Button>
+        </twig:Ui:EmptyState>
+    {% else %}
+        <twig:Book:Grid :books="page.items" headingLevel="2" :eagerCount="page.page == 1 ? 2 : 0" />
+        <twig:Ui:Pagination :page="page.page" :pages="page.pages" route="app_subject" :params="{slug: assunto.descricao|slug, id: assunto.codAs}" />
+    {% endif %}
+{% endblock %}
